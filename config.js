@@ -46,9 +46,9 @@ let wibh = moment.tz('Asia/Jakarta').format('HH')
 // Wajib diisi ya kak!, kalo ga punya biarin aja, biar ada creditsnya :v
 global.sig = 'https://www.instagram.com/_lucxfvr'
 global.sgh = 'https://github.com/VarrelKun'
-global.sgc = 'https://wa.me/6285954184111'
+global.sgc = 'https://chat.whatsapp.com/CfNQ31ONMbfAduYtVYyci3'
 global.sdc = " "
-global.snh = 'https://pentagram.my.id'
+global.snh = 'https://FuzePage.my.id'
 
 /*============== PAYMENT ==============*/
 global.pdana = '085954184111'
@@ -56,12 +56,12 @@ global.povo = '_'
 global.pgopay = '_'
 global.ppulsa = '085954184111'
 global.ppulsa2 = '085954184111'
-global.psaweria = '_'
+global.psaweria = 'https://discord.io/FuzePage'
 
 /*============== NOMOR ==============*/
 global.nomorbot = '6287739946665'
 global.nomorown = '6285954184111'
-global.namebot = '𝐏𝐄𝐍𝐓𝐀𝐆𝐑𝐀𝐌'
+global.namebot = 'FUZEBOT'
 global.nameown = 'SIJEMBOT'
 
 
@@ -115,19 +115,19 @@ global.APIKeys = { // APIKey Here
 // Kata APIKEY itu isi dengan apikey lu sendiri, dengan beli ke website itu
 
 /*============== WATERMARK ==============*/
-global.wm = '                 ⛧ 𝐏𝐄𝐍𝐓𝐀𝐆𝐑𝐀𝐌 ⛧' //Main Watermark
-global.wm2 = '𝐏𝐄𝐍𝐓𝐀𝐆𝐑𝐀𝐌'
-global.wm3 = '⫹⫺𝐏𝐄𝐍𝐓𝐀𝐆𝐑𝐀𝐌'
+global.wm = '                「 FUZEBOT 」' //Main Watermark
+global.wm2 = 'FUZEBOT'
+global.wm3 = '⫹⫺FUZEBOT'
 global.botdate = `⫹⫺ 𝗗𝗮𝘁𝗲: ${week} ${date}`
 global.bottime = `𝗧 𝗜 𝗠 𝗘 : ${wktuwib}`
-global.titlebot = '⛧┊ PENTAGRAM Whatsapp ʙᴏᴛ'
+global.titlebot = '🔥┊ FUZE Whatsapp ʙᴏᴛ'
 global.author = global.wm
 
 
 /*============== LOGO ==============*/
-global.thumb = 'https://telegra.ph/file/a791e0530456d0f5bcb8e.png' //Main Thumbnail
-global.thumb2 = 'https://telegra.ph/file/a791e0530456d0f5bcb8e.png'
-global.thumbbc = 'https://telegra.ph/file/a791e0530456d0f5bcb8e.png' //For broadcast
+global.thumb = 'https://telegra.ph/file/a258f3e6072ddca8f535c.jpg' //Main Thumbnail
+global.thumb2 = 'https://telegra.ph/file/a258f3e6072ddca8f535c.jpg'
+global.thumbbc = 'https://telegra.ph/file/d389f4acafac741f6592c.jpg' //For broadcast
 global.giflogo = 'https://telegra.ph/file/a46ab7fa39338b1f54d5a.mp4'
 
 global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text='
@@ -143,7 +143,7 @@ global.dxlsx = 'application/vnd.openxmlformats-officedocument.spreadsheetml.shee
 global.dpdf = 'application/pdf'
 global.drtf = 'text/rtf'
 
-global.thumbdoc = 'https://telegra.ph/file/a791e0530456d0f5bcb8e.png'
+global.thumbdoc = 'https://telegra.ph/file/6e45318d7c76f57e4a8bd.jpg'
 
 /*=========== FAKE SIZE ===========*/
 global.fsizedoc = '99999999999999' // default 10TB
@@ -169,14 +169,14 @@ global.htki = '––––––『' // Hiasan Titile (KIRI)
 global.htka = '』––––––' // Hiasan Title  (KANAN)
 global.lopr = 'Ⓟ' //LOGO PREMIUM ON MENU.JS
 global.lolm = 'Ⓛ' //LOGO FREE ON MENU.JS
-global.htjava = '𔔦'    //hiasan Doang :v
+global.htjava = '∞'    //hiasan Doang :v
 global.hsquere = ['⛶','❏','⫹⫺']
 
 /*============== STICKER WM ==============*/
-global.stickpack = '⛧𝐏𝐄𝐍𝐓𝐀𝐆𝐑𝐀𝐌⛧'
-global.stickauth = '_'
+global.stickpack = '.'
+global.stickauth = `FUZEBOT`
 
-global.multiplier = 25 // The higher, The harder levelup
+global.multiplier = 38 // The higher, The harder levelup
 
 /*============== EMOJI ==============*/
 global.rpg = {
