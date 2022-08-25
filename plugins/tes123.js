@@ -1,22 +1,13 @@
+import fs from 'fs'
+import fetch from 'node-fetch'
 let handler  = async (m, { conn, usedPrefix: _p }) => {
-let info = `
-Yoo!
-`.trim()
+let info = `Yoo!`
 
-conn.fakeReply(m.chat, info, '0@s.whatsapp.net', '  ', 'status@broadcast')
+let td = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
+
+conn.fakeReply(m.chat, info, '0@s.whatsapp.net', '*PAAN JEMBOT*🤬', 'status@broadcast')
 }
 handler.customPrefix = /^(bot|hi|p|tes|test|hii)$/i
 handler.command = new RegExp
 
-handler.owner = false
-handler.mods = false
-handler.premium = false
-handler.group = false
-handler.private = false
-
-handler.admin = false
-handler.botAdmin = false
-
-handler.fail = null
-
-export default handler 
+export default handler
