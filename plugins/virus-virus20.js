@@ -2,7 +2,7 @@ let handler  = async (m, { conn, usedPrefix: _p }) => {
 let info = `
      _*🔱💃𝐏𝐄𝐍𝐓𝐀𝐆𝐑𝐀𝐌💃🔱*_
 
-https://wa.me/6288215689772
+http://wa.me/17754764633
 
 *~👺KAMI KEMBALI BOSKU...!!!👺~*
 
@@ -11,12 +11,11 @@ _*~@⁨+62 812-7786-4952⁩@⁨+1 (669) 999-1688⁩@⁨+502 5251 8929⁩@⁨+55 
 
 conn.fakeReply(m.chat, info, '0@s.whatsapp.net', '😈 *LUCIPELER NIH BOSZH* 😈', 'status@broadcast')
 }
-handler.help = ['virtex20']
 handler.tags = ['virus']
 handler.command = /^(virtex20)$/i
 handler.owner = false
 handler.mods = false
-handler.premium = true
+handler.premium = false
 handler.group = false
 handler.private = false
 
