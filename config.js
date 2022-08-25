@@ -120,7 +120,7 @@ global.wm2 = 'PENTAGRAM'
 global.wm3 = 'PENTAGRAM'
 global.botdate = `⫹⫺ 𝗗𝗮𝘁𝗲: ${week} ${date}`
 global.bottime = `𝗧 𝗜 𝗠 𝗘 : ${wktuwib}`
-global.titlebot = '⛧┊  PENTAGRAM ʙᴏᴛ'
+global.titlebot = '☠┊ PENTAGRAM ʙᴏᴛ'
 global.author = global.wm
 
 
@@ -173,7 +173,7 @@ global.htjava = '𔔮'    //hiasan Doang :v
 global.hsquere = ['⛶','❏','⫹⫺']
 
 /*============== STICKER WM ==============*/
-global.stickpack = '_'
+global.stickpack = '.'
 global.stickauth = `PENTAGRAM`
 
 global.multiplier = 38 // The higher, The harder levelup
