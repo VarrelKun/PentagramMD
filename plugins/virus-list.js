@@ -2,11 +2,11 @@ let handler = async (m, { conn }) => {
 let info = `
 *${htki} VIRUS ${htka}*
           
- 🔥BY FANGZ🔥
+ ⛧𝐏𝐄𝐍𝐓𝐀𝐆𝐑𝐀𝐌⛧
           
                   
 –––––– *ᴋᴇʙɪᴊᴀᴋᴀɴ* ––––––
-*📮Gunakan Dengan tujuan yang benar. Jangan untuk merugikan orang lain tanpa alasan!*
+*MAU JADI HENGKER WANGSAF YA*
 `
 const sections = [
    {
@@ -53,7 +53,7 @@ const listMessage = {
   text: ' ',
   footer: info,
   title: null,
-  buttonText: "👺GASS",
+  buttonText: "👺NIH",
   sections
 }
 await conn.sendMessage(m.chat, listMessage, { quoted: m})
