@@ -117,10 +117,10 @@ global.APIKeys = { // APIKey Here
 /*============== WATERMARK ==============*/
 global.wm = '                ⛧ 𝐏𝐄𝐍𝐓𝐀𝐆𝐑𝐀𝐌 ⛧' //Main Watermark
 global.wm2 = 'PENTAGRAM'
-global.wm3 = '𝐏𝐄𝐍𝐓𝐀𝐆𝐑𝐀𝐌'
+global.wm3 = 'PENTAGRAM'
 global.botdate = `⫹⫺ 𝗗𝗮𝘁𝗲: ${week} ${date}`
 global.bottime = `𝗧 𝗜 𝗠 𝗘 : ${wktuwib}`
-global.titlebot = '⛧┊  𝐏𝐄𝐍𝐓𝐀𝐆𝐑𝐀𝐌 ʙᴏᴛ'
+global.titlebot = '⛧┊  PENTAGRAM ʙᴏᴛ'
 global.author = global.wm
 
 
