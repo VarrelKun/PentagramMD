@@ -56,7 +56,7 @@ global.povo = '_'
 global.pgopay = '_'
 global.ppulsa = '085954184111'
 global.ppulsa2 = '085954184111'
-global.psaweria = 'https://discord.io/FuzePage'
+global.psaweria = '_'
 
 /*============== NOMOR ==============*/
 global.nomorbot = '6287739946665'
@@ -115,12 +115,12 @@ global.APIKeys = { // APIKey Here
 // Kata APIKEY itu isi dengan apikey lu sendiri, dengan beli ke website itu
 
 /*============== WATERMARK ==============*/
-global.wm = '                「 FUZEBOT 」' //Main Watermark
-global.wm2 = 'FUZEBOT'
-global.wm3 = '⫹⫺FUZEBOT'
+global.wm = '                「 PENTAGRAM 」' //Main Watermark
+global.wm2 = '𝐏𝐄𝐍𝐓𝐀𝐆𝐑𝐀𝐌'
+global.wm3 = '⛧𝐏𝐄𝐍𝐓𝐀𝐆𝐑𝐀𝐌'
 global.botdate = `⫹⫺ 𝗗𝗮𝘁𝗲: ${week} ${date}`
 global.bottime = `𝗧 𝗜 𝗠 𝗘 : ${wktuwib}`
-global.titlebot = '🔥┊ FUZE Whatsapp ʙᴏᴛ'
+global.titlebot = '⛧┊ PENTAGRAM ʙᴏᴛ'
 global.author = global.wm
 
 
@@ -169,12 +169,12 @@ global.htki = '––––––『' // Hiasan Titile (KIRI)
 global.htka = '』––––––' // Hiasan Title  (KANAN)
 global.lopr = 'Ⓟ' //LOGO PREMIUM ON MENU.JS
 global.lolm = 'Ⓛ' //LOGO FREE ON MENU.JS
-global.htjava = '∞'    //hiasan Doang :v
+global.htjava = '𔔮'   //hiasan Doang :v
 global.hsquere = ['⛶','❏','⫹⫺']
 
 /*============== STICKER WM ==============*/
-global.stickpack = '.'
-global.stickauth = `FUZEBOT`
+global.stickpack = '_'
+global.stickauth = `𝐏𝐄𝐍𝐓𝐀𝐆𝐑𝐀𝐌`
 
 global.multiplier = 38 // The higher, The harder levelup
 
