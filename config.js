@@ -59,7 +59,7 @@ global.ppulsa2 = '085954184111'
 global.psaweria = '_'
 
 /*============== NOMOR ==============*/
-global.nomorbot = '6287739946665'
+global.nomorbot = '17754764633'
 global.nomorown = '6285954184111'
 global.namebot = '𝐏𝐄𝐍𝐓𝐀𝐆𝐑𝐀𝐌'
 global.nameown = 'SIJEMBOT'
@@ -67,7 +67,7 @@ global.nameown = 'SIJEMBOT'
 
 /*============== STAFF ==============*/
 global.owner = [
-  ['6285954184111'],
+  ['17754764633'],
   ['6285954184111'],
   ['18126338970'],
   ['6285954184111', 'SIJEMBOT', true]
