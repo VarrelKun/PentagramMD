@@ -4,7 +4,7 @@ let url = ppk[Math.floor(Math.random() * ppk.length)]
 }
 
 handler.customPrefix = /^(abi|abu|ramat|Rahmat|rahmat|mat|woi|woe)$/i
-handler.command = new RegExp
+handler.command = /^(abi|abu|ramat|Rahmat|rahmat|mat|woi|woe)$/i
 
 handler.owner = false
 handler.mods = false
