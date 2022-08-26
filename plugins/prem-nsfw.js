@@ -92,6 +92,7 @@ let uniform = (ch == true ? false : true)
 let waifu = (ch == true ? false : true)
 let yaoi = (ch == true ? false : true)
 let yuri = (ch == true ? false : true)
+let paptt = (ch == true ? false : false)
 //-------------------------------------
 
 //---------- TEXT -----------
@@ -112,6 +113,7 @@ const sections = [
    {
 	title: '◤◢◣◥◤◢◣◥◤◢◣◥◤◢◣◥◤◢◣◥◤◢◣◥◤◢◣◥◤◢◣◥',
 	rows: [
+        {title: `${ paptt == true ? p : f}` + "P • Paptt", rowId: ".paptt"},
 	{title: `${ ahegao == true ? p : f}` + "A • Ahegao", rowId: ".nsfw ahegao"},
 	{title: `${ anal == true ? p:f}` + "A • Anal", rowId: ".nsfw anal"},
 	{title: `${ ass == true ? p:f}` + "A • Ass", rowId: ".nsfw ass"},
