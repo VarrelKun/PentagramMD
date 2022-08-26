@@ -30,7 +30,7 @@ let res = 'https://api.zeeoneofc.xyz/api/nsfw/'
 let api = '?apikey=KKAqxTRG'
 
 //> Lolhuman
-let resl = 'https://api.lolhuman.xyz/api/random2/'
+let resl = 'https://api.lolhuman.xyz/api/random/nsfw/'
 let apil = '?apikey=8e66d0934cf741bfd2182c16'
 
 //> Xteam
