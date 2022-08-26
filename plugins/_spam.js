@@ -1,7 +1,7 @@
 import fetch from 'node-fetch'
 
 let handler = async (m, { conn }) => {
-	conn.sendFile(m.chat, './media/virgam.jpeg', spam5,20)
+	conn.sendFile(m.chat, './media/virgam.jpeg',20)
 }
 handler.command = /^(tes)$/i
 handler.tags = ['nocategory']
