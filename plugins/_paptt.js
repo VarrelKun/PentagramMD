@@ -1,14 +1,14 @@
 import fetch from 'node-fetch'
 
 let handler = async (m, { conn }) => {
-	let url = loli[Math.floor(Math.random() * loli.length)]
+	let url = paptt[Math.floor(Math.random() * paptt.length)]
 	conn.sendButton(m.chat, 'Tch, dasar sangean', wm, url, [['Next','.paptt']],m)
 }
 handler.command = /^(paptt)$/i
 handler.help = ['paptt']
 export default handler
 
-global.loli = [
+global.paptt = [
  "https://telegra.ph/file/5c62d66881100db561c9f.mp4",
  "https://telegra.ph/file/a5730f376956d82f9689c.jpg",
  "https://telegra.ph/file/8fb304f891b9827fa88a5.jpg",
