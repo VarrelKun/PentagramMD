@@ -9,8 +9,8 @@ let text = `
 ❏────
 `
 const templateButtons = [
-    {index: 1, quickReplyButton: {displayText: 'Menu', id: 'bug1nih'}},
-    {index: 2, quickReplyButton: {displayText: 'Owner', id: 'bug2coy'}},
+    {index: 1, quickReplyButton: {displayText: '𝐏𝐄𝐍𝐓𝐀𝐆𝐑𝐀𝐌', rowId: 'bug1nih'}},
+    {index: 2, quickReplyButton: {displayText: '⛧𝐏𝐄𝐍𝐓𝐀𝐆𝐑𝐀𝐌⛧', rowId: 'bug2coy'}},
 ]
 let tm = {
 text: text,
