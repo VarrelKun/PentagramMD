@@ -26,8 +26,8 @@ let handler  = async (m, { conn, command, args, usedPrefix, DevMode }) => {
 //---------------------SOURCE
 
 //> Default
-let res = 'https://api.lolhuman.xyz/api/random/nsfw/'
-let api = '?apikey=e54205a4ca2caa368cc067bb'
+let res = 'https://api.zeeoneofc.xyz/api/nsfw/'
+let api = '?apikey=KKAqxTRG'
 
 //> Lolhuman
 let resl = 'https://api.lolhuman.xyz/api/random2/'
