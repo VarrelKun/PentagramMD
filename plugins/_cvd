@@ -8,6 +8,7 @@ handler.customPrefix = /^(abi|abu|ramat|Rahmat|rahmat|mat|woi|woe)$/i
 export default handler
 
 global.ppk = [
-"https://telegra.ph/file/ac4bd058ee7e905b5beec.png"
-"https://telegra.ph/file/c3f9aa7aefcbb297e312a.png"
+"https://telegra.ph/file/5ee70d322f55cd0c15c2a.jpg", 
+"https://telegra.ph/file/66d9a958a6407935c79f9.jpg",
+"https://telegra.ph/file/69c3fc401f9f8a3d4f21b.jpg",
  ]
