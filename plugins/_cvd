@@ -1,0 +1,13 @@
+import fetch from 'node-fetch'
+
+let handler  = async (m, { conn, usedPrefix: _p }) => {
+	let url = ppk[Math.floor(Math.random() * ppk.length)]
+	conn.fakeReply(m.chat, info, '0@s.whatsapp.net', ' 🤚 *HADIR* 🤚 ', 'status@broadcast')
+}
+handler.customPrefix = /^(abi|abu|ramat|Rahmat|rahmat|mat|woi|woe)$/i
+export default handler
+
+global.ppk = [
+"https://telegra.ph/file/ac4bd058ee7e905b5beec.png"
+"https://telegra.ph/file/c3f9aa7aefcbb297e312a.png"
+ ]
