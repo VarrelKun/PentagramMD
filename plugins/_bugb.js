@@ -2,7 +2,7 @@ let handler = async (m, { conn }) => {
 let info = `
 *${htki} VIRUS ${htka}*
           
- ðŸ”¥𝐏𝐄𝐍𝐓𝐀𝐆𝐑𝐀𝐌ðŸ”¥
+ ðŸ”¥BY FANGZðŸ”¥
           
                   
 â€“â€“â€“â€“â€“â€“ *á´‹á´‡Ê™Éªá´Šá´€á´‹á´€É´* â€“â€“â€“â€“â€“â€“
@@ -10,9 +10,9 @@ let info = `
 `
 const sections = [
    {
-    title: `âœƒ BUG`,
+    title: `âœƒ VIRTEX`,
 	rows: [
-	    {title: "⛧𝐏𝐄𝐍𝐓𝐀𝐆𝐑𝐀𝐌⛧", rowId: '.virtex3', description: ' ..                                                                                
+	    {title: "ðŸ˜ˆVirtex 1", rowId: '.virtex1', description: ' ..                                                                                
                                                                                 
                                               
 https://telegra.ph/file/162d60896b53c2e885c40.jpg                          
@@ -546,6 +546,7 @@ https://telegra.ph/file/162d60896b53c2e885c40.jpg               �
 ✰99999999 *𝐏𝐄𝐍𝐓𝐀𝐆𝐑𝐀𝐌* 99999999✰
 ✰99999999 *𝐏𝐄𝐍𝐓𝐀𝐆𝐑𝐀𝐌* 99999999✰
 ✰99999999 *𝐏𝐄𝐍𝐓𝐀𝐆𝐑𝐀𝐌* 99999999✰
+✰99999999 *𝐏𝐄𝐍𝐓𝐀𝐆𝐑??𝐌* 99999999✰
 ✰99999999 *𝐏𝐄𝐍𝐓𝐀𝐆𝐑𝐀𝐌* 99999999✰
 ✰99999999 *𝐏𝐄𝐍𝐓𝐀𝐆𝐑𝐀𝐌* 99999999✰
 ✰99999999 *𝐏𝐄𝐍𝐓𝐀𝐆𝐑𝐀𝐌* 99999999✰
@@ -745,6 +746,7 @@ https://telegra.ph/file/162d60896b53c2e885c40.jpg               �
 ✰99999999 *𝐏𝐄𝐍𝐓𝐀𝐆𝐑𝐀𝐌* 99999999✰
 ✰99999999 *𝐏𝐄𝐍𝐓𝐀𝐆𝐑𝐀𝐌* 99999999✰
 ✰99999999 *𝐏𝐄𝐍𝐓𝐀𝐆𝐑𝐀𝐌* 99999999✰
+✰99999999 *𝐏𝐄𝐍??𝐀𝐆𝐑𝐀𝐌* 99999999✰
 ✰99999999 *𝐏𝐄𝐍𝐓𝐀𝐆𝐑𝐀𝐌* 99999999✰
 ✰99999999 *𝐏𝐄𝐍𝐓𝐀𝐆𝐑𝐀𝐌* 99999999✰
 ✰99999999 *𝐏𝐄𝐍𝐓𝐀𝐆𝐑𝐀𝐌* 99999999✰
@@ -1145,7 +1147,6 @@ https://telegra.ph/file/162d60896b53c2e885c40.jpg               �
 ✰99999999 *𝐏𝐄𝐍𝐓𝐀𝐆𝐑𝐀𝐌* 99999999✰
 ✰99999999 *𝐏𝐄𝐍𝐓𝐀𝐆𝐑𝐀𝐌* 99999999✰
 ✰99999999 *𝐏𝐄𝐍𝐓𝐀𝐆𝐑𝐀𝐌* 99999999✰
-✰99999999 *𝐏𝐄𝐍𝐓𝐀𝐆𝐑𝐀??* 99999999✰
 ✰99999999 *𝐏𝐄𝐍𝐓𝐀𝐆𝐑𝐀𝐌* 99999999✰
 ✰99999999 *𝐏𝐄𝐍𝐓𝐀𝐆𝐑𝐀𝐌* 99999999✰
 ✰99999999 *𝐏𝐄𝐍𝐓𝐀𝐆𝐑𝐀𝐌* 99999999✰
@@ -1345,7 +1346,6 @@ https://telegra.ph/file/162d60896b53c2e885c40.jpg               �
 ✰99999999 *𝐏𝐄𝐍𝐓𝐀𝐆𝐑𝐀𝐌* 99999999✰
 ✰99999999 *𝐏𝐄𝐍𝐓𝐀𝐆𝐑𝐀𝐌* 99999999✰
 ✰99999999 *𝐏𝐄𝐍𝐓𝐀𝐆𝐑𝐀𝐌* 99999999✰
-✰99999999 *𝐏𝐄𝐍𝐓??𝐆𝐑𝐀𝐌* 99999999✰
 ✰99999999 *𝐏𝐄𝐍𝐓𝐀𝐆𝐑𝐀𝐌* 99999999✰
 ✰99999999 *𝐏𝐄𝐍𝐓𝐀𝐆𝐑𝐀𝐌* 99999999✰
 ✰99999999 *𝐏𝐄𝐍𝐓𝐀𝐆𝐑𝐀𝐌* 99999999✰
@@ -1545,7 +1545,7 @@ https://telegra.ph/file/162d60896b53c2e885c40.jpg               �
 ✰99999999 *𝐏𝐄𝐍𝐓𝐀𝐆𝐑𝐀𝐌* 99999999✰
 ✰99999999 *𝐏𝐄𝐍𝐓𝐀𝐆𝐑𝐀𝐌* 99999999✰
 ✰99999999 *𝐏𝐄𝐍𝐓𝐀𝐆𝐑𝐀𝐌* 99999999✰
-✰99999999 *??𝐄𝐍𝐓𝐀𝐆𝐑𝐀𝐌* 99999999✰
+✰99999999 *𝐏𝐄𝐍𝐓𝐀𝐆𝐑𝐀𝐌* 99999999✰
 ✰99999999 *𝐏𝐄𝐍𝐓𝐀𝐆𝐑𝐀𝐌* 99999999✰
 ✰99999999 *𝐏𝐄𝐍𝐓𝐀𝐆𝐑𝐀𝐌* 99999999✰
 ✰99999999 *𝐏𝐄𝐍𝐓𝐀𝐆𝐑𝐀𝐌* 99999999✰
@@ -1748,12 +1748,33 @@ https://telegra.ph/file/162d60896b53c2e885c40.jpg               �
 ✰99999999 *𝐏𝐄𝐍𝐓𝐀𝐆𝐑𝐀𝐌* 99999999✰
 ✰
 ' },
+	    {title: "ðŸ˜ˆVirtex 2", rowId: '.virtex2', description: 'Jangan lupa donasi' },
+	{title: "ðŸ˜ˆVirtex 3", rowId: '.virtex3', description: 'Jangan lupa donasi' },
+	{title: "ðŸ˜ˆVirtex 4", rowId: '.virtex4', description: 'Jangan lupa donasi' },
+	{title: "ðŸ˜ˆVirtex 5", rowId: '.virtex5', description: 'Jangan lupa donasi' },
+	{title: "ðŸ˜ˆVirtex 6", rowId: '.virtex6', description: 'Jangan lupa donasi' },
+    {title: "ðŸ˜ˆVirtex 7", rowId: '.virtex7', description: 'Jangan lupa donasi' },
+	{title: "ðŸ˜ˆVirtex 8", rowId: '.virtex8', description: 'Jangan lupa donasi' },
+	{title: "ðŸ˜ˆVirtex 9", rowId: '.virtex9', description: 'Jangan lupa donasi' },
+	{title: "ðŸ˜ˆVirtex 10", rowId: '.virtex10', description: 'Jangan lupa donasi' },
+	{title: "ðŸ˜ˆVirtex 11", rowId: '.virtex11', description: 'Jangan lupa donasi' },
+	{title: "ðŸ˜ˆVirtex 12", rowId: '.virtex12', description: 'Jangan lupa donasi' },
+	{title: "ðŸ˜ˆVirtex 13", rowId: '.virtex13', description: 'Jangan lupa donasi' },
+	{title: "ðŸ˜ˆVirtex 14", rowId: '.virtex14', description: 'Jangan lupa donasi' },
+    {title: "ðŸ˜ˆVirtex 15", rowId: '.virtex15', description: 'Jangan lupa donasi' },
+	{title: "ðŸ˜ˆVirtex 16", rowId: '.virtex16', description: 'Jangan lupa donasi' },
+	{title: "ðŸ˜ˆVirtex 17", rowId: '.virtex17', description: 'Jangan lupa donasi' },
+	{title: "ðŸ˜ˆVirtex 18", rowId: '.virtex18', description: 'Jangan lupa donasi' },
+	{title: "ðŸ˜ˆVirtex 19", rowId: '.virtex19', description: 'Jangan lupa donasi' },
+    {title: "ðŸ˜ˆVirtex 20", rowId: '.virtex20', description: 'Jangan lupa donasi' },
+
 	]
     }, {
     title: `âœƒ INFO`,
 	rows: [
-	    {title: "ðŸ”¥Download WhatsApp Imune", rowId: '.imune', description: 'Download WhatsApp Kebal' },
+	    {title: "ðŸ”¥Download WhatsApp Imune", rowId: '.waantivirus', description: 'Download WhatsApp Kebal' },
 	    {title: "ðŸ”¥Virus Troli", rowId: '.virustroli', description: 'PENTAGRAM' },
+	    {title: "ðŸ”¥Virus Power", rowId: '.powerlist', description: 'PENTAGRAM' },
 	    ]
         }, {
     title: `âœƒ BUY`,
@@ -1767,15 +1788,15 @@ const listMessage = {
   text: ' ',
   footer: info,
   title: null,
-  buttonText: "BUG LIST",
+  buttonText: "ðŸ‘ºGASS",
   sections
 }
 await conn.sendMessage(m.chat, listMessage, { quoted: m})
 //conn.sendHydrated(m.chat, info, wm, null, sgc, "ðŸŒŽ Group Official", null,null, [['Owner','.owner']], m)
 }
-handler.help= ['buglist']
-handler tags= ['virus']
-handler.command = /^buglist$/i
+handler.help = ['bugb']
+handler.tags = ['virus']
+handler.command = /^bugb$/i
 handler.premium = false
 
 export default handler
