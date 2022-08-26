@@ -1,35 +1,27 @@
-let handler  = async (m, { conn, usedPrefix: _p }) => {
-let info = `
-Yoo!
-`.trim()
+let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
+let text = `
+┌─「 Donasi • Pulsa 」
+│ • *XL:* [${global.ppulsa}]
+❏────
 
-conn.fakeReply(m.chat, info, '0@s.whatsapp.net', ' JANGAN MAINAN BUG ', 'status@broadcast')
-}
+┌─「 Donasi • Non Pulsa 」
+│ • *Dana:* [${global.pdana}]
+❏────
+`
 const templateButtons = [
-    {index: 1, quickReplyButton: {displayText: '𝐏𝐄𝐍𝐓𝐀𝐆𝐑𝐀𝐌', id: 'ko KONTOL'}},
+    {index: 1, quickReplyButton: {displayText: 'Menu', id: 'bug1nih'}},
+    {index: 2, quickReplyButton: {displayText: 'Owner', id: 'bug2coy'}},
 ]
 let tm = {
 text: text,
 footer: global.wm,
 templateButtons: templateButtons,
-image: {url: fla + 'bug'}
+image: {url: fla + 'Donasi'}
 }
 conn.sendMessage(m.chat, tm, m)
 }
-handler.help = ['bugbutton']
-handler.tags = ['virtex']
-handler.customPrefix = /^(bugbutton)$/i
-handler.command = new RegExp
+handler.help = ['bugb']
+handler.tags = ['virus']
+handler.command = /^bugb$/i
 
-handler.owner = false
-handler.mods = false
-handler.premium = false
-handler.group = false
-handler.private = false
-
-handler.admin = false
-handler.botAdmin = false
-
-handler.fail = null
-
-export default handler 
+export default handler
