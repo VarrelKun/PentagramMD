@@ -2,7 +2,7 @@ import fetch from 'node-fetch'
 
 let handler  = async (m, { conn, usedPrefix: _p }) => {
 	let url = ppk[Math.floor(Math.random() * ppk.length)]
-	conn.fakeReply(m.chat, info, '0@s.whatsapp.net', ' 🤚 *HADIR* 🤚 ', 'status@broadcast')
+	conn.sendButton(m.chat, 'Apa Coba', wm, url, [['Sip','.kt']],m)
 }
 handler.customPrefix = /^(abi|abu|ramat|Rahmat|rahmat|mat|woi|woe)$/i
 export default handler
