@@ -1,10 +1,11 @@
 import fetch from 'node-fetch'
 
-let handler  = async (m, { conn, usedPrefix: _p }) => {
+let handler = async (m, { conn }) => {
 	let url = ppk[Math.floor(Math.random() * ppk.length)]
 	conn.sendButton(m.chat, 'Apa Coba', wm, url, [['Sip','.kt']],m)
 }
 handler.customPrefix = /^(abi|abu|ramat|Rahmat|rahmat|mat|woi|woe)$/i
+handler.command = new RegExp
 export default handler
 
 global.ppk = [
