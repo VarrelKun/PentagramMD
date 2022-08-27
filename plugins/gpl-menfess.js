@@ -6,13 +6,7 @@ let [number, pesan, boddy] = text.split `|`
 
 let td = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
 
-    
-    if (!number) return conn.reply(m.chat, 'Gunakan dengan cara .menfess *nomer tujuan|pesannya*
-
-_Contoh_
-
-.menfess 6287855823556|hai
-', m)
+    if (!number) return conn.reply(m.chat, 'Silahkan masukan nomor yang akan dikirim', m)
     if (!pesan) return conn.reply(m.chat, 'Silahkan masukan pesannya', m)
     if (text > 500) return conn.reply(m.chat, 'Teks Kepanjangan!', m)
     
