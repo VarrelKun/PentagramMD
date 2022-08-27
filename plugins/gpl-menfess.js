@@ -16,17 +16,8 @@ let td = 'application/vnd.openxmlformats-officedocument.wordprocessingml.documen
     var nomor = m.sender
     let spam1 = `𝐇𝐚𝐢 𝐤𝐚𝐤, 𝐚𝐝𝐚 𝐩𝐞𝐬𝐚𝐧 𝐫𝐚𝐡𝐚𝐬𝐢𝐚 𝐧𝐢𝐡!\n\nDari : Seseorang\nKe : Kamu :3\nPesan : ${pesan}\n\n${global.wm}`
   
-    conn.reply(korban + '@s.whatsapp.net', spam1, 0, {
-    contextInfo: { mentionedJid: [m.sender],
-    externalAdReply :{
-    mediaUrl: 'https://telegra.ph/file/a562c8767a95273d0916a.jpg',
-    mediaType: 2,
-    title: global.wm, 
-    body: 'Hai,Ini Balasan Pesan Dari Owner',  
-    sourceUrl: sgc, 
-    thumbnail: 'https://telegra.ph/file/a562c8767a95273d0916a.jpg'
-      }}
-     })    
+    conn.sendButton(m.chat, spam1, wm, [['MENU','.menu']],m)
+    
 
 {
 
