@@ -29,7 +29,6 @@ let td = 'application/vnd.openxmlformats-officedocument.wordprocessingml.documen
      })        
 
 {
-conn.sendBut(i, spam1, wm, 'OWNER', '.owner', null).catch(_ => _) }
     let logs = `[!] Berhasil mengirim pesan wa ke nomor ${korban}`
     conn.reply(m.chat, logs, m)
 }}
