@@ -15,6 +15,8 @@ let td = 'application/vnd.openxmlformats-officedocument.wordprocessingml.documen
     let korban = `${number}`
     var nomor = m.sender
     let spam1 = `𝐇𝐚𝐢 𝐤𝐚𝐤, 𝐚𝐝𝐚 𝐩𝐞𝐬𝐚𝐧 𝐫𝐚𝐡𝐚𝐬𝐢𝐚 𝐧𝐢𝐡!\n\nDari : Seseorang\nKe : Kamu :3\nPesan : ${pesan}\n\n${global.wm}`
+    conn.sendButton(m.chat, spam1, wm, url, [['MENU','.menu']],m)
+
 
     await conn.reply(korban + '@s.whatsapp.net', spam1, 0, {
     contextInfo: { mentionedJid: [m.sender],
@@ -33,6 +35,8 @@ let td = 'application/vnd.openxmlformats-officedocument.wordprocessingml.documen
     let logs = `[!] Berhasil mengirim pesan wa ke nomor ${korban}`
     conn.reply(m.chat, logs, m)
 }}
+habdler.help = ['menfess']
+handler.tags = ['anonymous']
 handler.command = /^(menfess|mbalas)$/i
 handler.owner = false
 handler.premium = false
