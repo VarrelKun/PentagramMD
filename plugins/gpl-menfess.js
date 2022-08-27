@@ -6,7 +6,8 @@ let [number, pesan, boddy] = text.split `|`
 
 let td = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
 
-     if (!args[0]) throw 'Gunakan dengan cara .menfess *nomer tujuan|pesannya*
+    let response = args.join(' ').split('|')
+    if (!args[0]) throw 'Gunakan dengan cara .menfess *nomer tujuan|pesannya*
 
 _Contoh_
 
