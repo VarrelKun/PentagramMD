@@ -19,12 +19,12 @@ let td = 'application/vnd.openxmlformats-officedocument.wordprocessingml.documen
     await conn.reply(korban + '@s.whatsapp.net', spam1, 0, {
     contextInfo: { mentionedJid: [m.sender],
     externalAdReply :{
-    mediaUrl: '',
+    mediaUrl: 'https://telegra.ph/file/a562c8767a95273d0916a.jpg',
     mediaType: 2,
     title: global.wm, 
     body: 'Hai,Ini Balasan Pesan Dari Owner',  
     sourceUrl: sgc, 
-    thumbnail: fs.readFileSync('./thumbnail.jpg')
+    thumbnail: 'https://telegra.ph/file/a562c8767a95273d0916a.jpg'
       }}
      })    
 
