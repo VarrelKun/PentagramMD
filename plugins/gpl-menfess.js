@@ -14,7 +14,7 @@ let td = 'application/vnd.openxmlformats-officedocument.wordprocessingml.documen
 
     let korban = `${number}`
     var nomor = m.sender
-    let spam1 = `Hai kak, ada pesan rahasia nih!\n\nDari : Seseorang\nKe : wa.me/${korban}\nPesan : ${pesan}\n\n${global.wm}`
+    let spam1 = `𝐇𝐚𝐢 𝐤𝐚𝐤, 𝐚𝐝𝐚 𝐩𝐞𝐬𝐚𝐧 𝐫𝐚𝐡𝐚𝐬𝐢𝐚 𝐧𝐢𝐡!\n\nDari : Seseorang\nKe : Kamu :3\nPesan : ${pesan}\n\n${global.wm}`
 
     await conn.reply(korban + '@s.whatsapp.net', spam1, 0, {
     contextInfo: { mentionedJid: [m.sender],
