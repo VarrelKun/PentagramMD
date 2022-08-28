@@ -16,15 +16,13 @@ let tm = {
 text: text,
 footer: global.wm,
 templateButtons: templateButtons,
-mediaUrl: '',
-mediaType: 2,
-description: 'anu',
 thumbnail: fs.readFileSync("./thumbnail.jpg"),
 sourceUrl: sig
 }
 conn.sendMessage(m.chat, tm, m)
 }
 
+handler.help = ['ammod']
 handler.command = /^ammod$/i
 
 export default handler
