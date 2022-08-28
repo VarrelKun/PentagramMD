@@ -6,18 +6,18 @@ let info = `
           
   _Kalian Bisa Request Nambah Apk/Fitur Lainnya Ke Owner_
                   
-–––––– *ᴋᴇʙɪᴊᴀᴋᴀɴ* ––––––
-*📮Jangan Lupa Berdonasi :D*
+â€“â€“â€“â€“â€“â€“ *á´‹á´‡Ê™Éªá´Šá´€á´‹á´€É´* â€“â€“â€“â€“â€“â€“
+*ðŸ“®Jangan Lupa Berdonasi :D*
 `
 const sections = [
    {
-    title: `✃ APK`,
+    title: `âœƒ APK`,
 	rows: [
 	    {title: "Alight Motion (MOD)", rowId: '.ammod', description: 'V 3.1.4 via Mediafire' },
 	    {title: "Minecraft (PE)", rowId: '.mcpe', description: 'V 1.16.101 via Mediafire' },
 	{title: "PSCC", rowId: '.pscc', description: 'Free Download via Mediafire' },
 	{title: "Pixellab", rowId: '.pxlb', description: 'Android Apk For Editing/Design' },
-	{title: "Kinemaster", rowId: '.kinemstr', description: 'Cocok buat lu pada yang ngedit anime' },
+	{title: "Node Video (PRO)", rowId: '.node', description: 'Cocok buat lu pada yang ngedit anime' },
 	]
     }, 
     
@@ -31,7 +31,7 @@ const listMessage = {
   sections
 }
 await conn.sendMessage(m.chat, listMessage, { quoted: m})
-//conn.sendHydrated(m.chat, info, wm, null, sgc, "🌎 Group Official", null,null, [['Owner','.owner']], m)
+//conn.sendHydrated(m.chat, info, wm, null, sgc, "ðŸŒŽ Group Official", null,null, [['Owner','.owner']], m)
 }
 handler.command = /^apk$/i
 handler.premium = false
