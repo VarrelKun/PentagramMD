@@ -248,7 +248,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
 	    {title: `💬 ${pmenus} All`, rowId: ".? all", description: "Menampilkan Semua command BOT"},
 	    {title: `🌱 ${pmenus} Rpg`, rowId: ".? rpg", description: "Game Epic Rpg!"},
 	{title: `✨ ${pmenus} Exp`, rowId: ".? xp", description: "Ayo tingkatkan pangkat mu!"},
-        {title: `🧿 ${pmenus} APK DOWNLOAD`, rowId: ".? apk", description: "Fitur berguna untuk mendownload Aplikasi"},
+        {title: `🧿 ${pmenus} APK DOWNLOAD`, rowId: ".apk", description: "Fitur berguna untuk mendownload Aplikasi"},
 	{title: `🎮 ${pmenus} Game`, rowId: ".? game", description: "Gamenya seru seru lho >-<"},
 	{title: `🧩 ${pmenus} Fun`, rowId: ".? fun", description: "Fitur yang aman untuk keluarga"},
 	{title: `☠ ${pmenus} Virus`, rowId: ".? virus", description: "Virus/Bug WhatsApp"},
