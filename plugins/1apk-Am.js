@@ -11,7 +11,7 @@ let totalf = Object.values(global.plugins).filter(
     
 *${htjava} Version:* 3.1.4
 *${htjava} Link:* http://www.mediafire.com/file/tpxj2grwf8imp6i/Alight_Motion_V.3.1.4_%2528Mod%2529_By_bilqis_neha.apk/file
-*${htjava} Filesize:* 54mb\n`,wm + '\n\n' + botdate, [['MENU','.menu']], m, {
+*${htjava} Filesize:* 40mb\n`,wm + '\n\n' + botdate, thumb, [['⎙ Download ⎙','.mediafire http://www.mediafire.com/file/tpxj2grwf8imp6i/Alight_Motion_V.3.1.4_%2528Mod%2529_By_bilqis_neha.apk/file']], m, {
 contextInfo: { externalAdReply :{
                         mediaUrl: '',
                         mediaType: 2,
