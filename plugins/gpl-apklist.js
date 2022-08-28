@@ -6,8 +6,8 @@ let info = `
           
   _Kalian Bisa Request Nambah Apk/Fitur Lainnya Ke Owner_
                   
-â€“â€“â€“â€“â€“â€“ *á´‹á´‡Ê™Éªá´Šá´€á´‹á´€É´* â€“â€“â€“â€“â€“â€“
-*ðŸ“®Jangan Lupa Berdonasi :D*
+–––––– *MEDIAFIRE* ––––––
+*📮 ®Jangan Lupa Berdonasi :D*
 `
 const sections = [
    {
