@@ -1,6 +1,7 @@
 import fetch from 'node-fetch'
 
 let handler = async (m, { conn }) => {
+        if (db.data.chats[m.chat].nsfw == false && m.isGroup) return conn.sendButton(m.chat, '❗ ᴏᴘᴛɪᴏɴs ɴsғᴡ ᴅɪᴄʜᴀᴛ ɪɴɪ ʙᴇʟᴜᴍ ᴅɪɴʏᴀʟᴀᴋᴀɴ ᴏʟᴇʜ ᴀᴅᴍɪɴ ɢʀᴏᴜᴘ',wm.date, null, [['ᴇɴᴀʙʟᴇ', '.on nsfw']], m)
 	let url = paptt[Math.floor(Math.random() * paptt.length)]
 	conn.sendButton(m.chat, 'Tch, dasar sangean', wm, url, [['Next','.paptt']],m)
 }
