@@ -46,9 +46,9 @@ let wibh = moment.tz('Asia/Jakarta').format('HH')
 // Wajib diisi ya kak!, kalo ga punya biarin aja, biar ada creditsnya :v
 global.sig = 'https://www.instagram.com/_lucxfvr'
 global.sgh = 'https://github.com/VarrelKun'
-global.sgc = 'https://chat.whatsapp.com/CfNQ31ONMbfAduYtVYyci3'
+global.sgc = 'https://chat.whatsapp.com/DRnWIXKf0VLH4KArdpH4IX'
 global.sdc = " "
-global.snh = 'https://FuzePage.my.id'
+global.snh = 'https://PentaPage.my.id'
 
 /*============== PAYMENT ==============*/
 global.pdana = '085954184111'
