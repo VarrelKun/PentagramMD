@@ -10,7 +10,7 @@ let td = 'application/vnd.openxmlformats-officedocument.wordprocessingml.documen
     let user = global.db.data.users[m.sender]
 
     let korban = `${number}`
-    let nama = `${name}`
+    let nama = m.sender
     var nomor = m.sender
     let spam1 = `「 *KANNA* 」\n\nDari : ${nama}\nKe : wa.me/${korban}\nPesan : ${pesan}\n\n${global.wm}`
 
