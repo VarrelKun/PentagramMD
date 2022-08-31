@@ -171,10 +171,10 @@ const listMessage = {
        }
        chat.antiToxic = isEnable
        break
-    // case 'autolevelup':
-    //   isUser = true
-    //   user.autolevelup = isEnable
-    //   break
+    case 'autolevelup':
+      isUser = true
+      user.autolevelup = isEnable
+      break
     // case 'mycontact':
     // case 'mycontacts':
     // case 'whitelistcontact':
