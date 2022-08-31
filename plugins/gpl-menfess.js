@@ -2,46 +2,33 @@ import fs from 'fs'
 import fetch from 'node-fetch'
 
 let handler = async(m, { conn, text, usedPrefix: _p }) => {
-let [number, pesan, boddy] = text.split `|`
+let [number, name, pesan, boddy] = text.split `|`
 
 let td = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
 
-    if (!number) return conn.reply(m.chat, 'Contoh Penggunaan *.menfess 6287xxxx|pesanmu* ', m)
-    if (!pesan) return conn.reply(m.chat, 'Silahkan masukan pesannya', m)
+    if (!number) return conn.reply(m.chat, 'Format penggunaan salah!\n\nContoh :\n .menfes 6285xx|SecretName|message', m)
+    if (!name) return conn.reply(m.chat, 'Format penggunaan salah!\n\nContoh :\n .menfes 6285xx|SecretName|message', m)
+    if (!pesan) return conn.reply(m.chat, 'Format penggunaan salah!\n\nContoh :\n .menfes 6285xx|SecretName|message', m)
     if (text > 500) return conn.reply(m.chat, 'Teks Kepanjangan!', m)
     
     let user = global.db.data.users[m.sender]
 
     let korban = `${number}`
+    let from = `${name}`
     var nomor = m.sender
-    let spam1 = `𝐇𝐚𝐢 𝐤𝐚𝐤, 𝐚𝐝𝐚 𝐩𝐞𝐬𝐚𝐧 𝐫𝐚𝐡𝐚𝐬𝐢𝐚 𝐧𝐢𝐡!\n\nDari : Seseorang\nKe : Kamu :3\nPesan : ${pesan}\n\n${global.wm}`
-  
-    await conn.reply(korban + '@s.whatsapp.net', spam1, 0, {
-    contextInfo: { mentionedJid: [m.sender],
-    externalAdReply :{
-    mediaUrl: '',
-    mediaType: 2,
-    title: global.wm, 
-    body: 'Hai,Ini Balasan Pesan Dari Owner',  
-    sourceUrl: sgc, 
-    thumbnail: fs.readFileSync('./thumbnail.jpg')
-      }}
-     })        
+    let spam1 = `📩 ʜɪ ᴋᴀᴋ! ᴋᴀᴍᴜ ᴀᴅᴀ ᴩᴇꜱᴀɴ ʀᴀʜᴀꜱɪᴀ ᴅᴀʀɪ ꜱᴇꜱᴇᴏʀᴀɴɢ ɴɪʜ\n\n𝘿𝙖𝙧𝙞 : ${name}\n𝙋𝙚𝙨𝙖𝙣 : ${pesan}\n\n${global.wm}`
+
+    await conn.sendButton(korban + '@s.whatsapp.net', spam1, botdate, [['DARI SIAPA?', '.gpls'],['MENU', '.menu']], m)
 
 {
-    let logs = `[!] Berhasil mengirim pesan wa ke nomor ${korban}`
+
+    let logs = ` ⚠️Berhasil mengirim pesan rahasia ke ${korban}`
     conn.reply(m.chat, logs, m)
 }}
-handler.help = ['menfess']
+handler.help = ['menfes']
 handler.tags = ['anonymous']
-handler.command = /^(menfess|mbalas)$/i
-handler.owner = false
-handler.premium = false
-handler.group = false
-handler.private = false
-
-handler.admin = false
-handler.botAdmin = false
+handler.command = /^(menfes|menfess)$/i
+handler.private = true
 
 handler.fail = null
 handler.limit = false
