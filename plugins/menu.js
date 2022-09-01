@@ -266,7 +266,7 @@ let tek = `*${ucapan()} ${conn.getName(m.sender)}*
 • *sᴛᴀᴛᴜs:* ${m.sender.split`@`[0] == nomorown ? 'Developer' : (usrs.premiumTime >= 1 ? 'Premium User' : 'Free User')}
 • *ᴘʀᴇᴍɪᴜᴍ:* ${usrs.premiumTime > 1 ? 'Yes': 'No'}
 • *ʀᴏʟᴇ:* ${usrs.role}${usrs.premiumTime > 1 ? `
-`
+
 const listMessage = {
   text: tek,
   footer: '📮 *Note:* Bot masih dalam pengembangan, jika menemukan bug/fitur error harap dimaklumi',
