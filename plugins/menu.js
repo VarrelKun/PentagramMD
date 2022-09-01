@@ -11,15 +11,28 @@ import fetch from 'node-fetch'
 
 const defaultMenu = {
   before: `
-%m1 *P E N T A G R A M*
+%dash
+%m1 *A B O U T*
 %m2 *%ucpn*
 %m2 *Name:* %name
 %m2 *Tag:* %tag
 %m2 *Status:* %prems
 %m2 *Limit:* %limit
-%m2 *Level:* %level 
+%m2 *Money:* %money
+%m2 *Role:* %role
+%m2 *Level:* %level
 %m2 *Days:* %week %weton
 %m2 *Date:* %date
+%m3
+
+%m1 *I N F O*
+%m2 *Bot Name:* %me
+%m2 *Mode:* %mode
+%m2 *Platform:* %platform
+%m2 *Type:* Node.Js
+%m2 *Baileys:* Multi Device
+%m2 *Prefix:* [ *%_p* ]
+%m2 *Uptime:* %muptime
 %m3
 
 %m1 *I N F O  C M D* 
@@ -266,7 +279,9 @@ let tek = `*${ucapan()} ${conn.getName(m.sender)}*
 • *sᴛᴀᴛᴜs:* ${m.sender.split`@`[0] == nomorown ? 'Developer' : (usrs.premiumTime >= 1 ? 'Premium User' : 'Free User')}
 • *ᴘʀᴇᴍɪᴜᴍ:* ${usrs.premiumTime > 1 ? 'Yes': 'No'}
 • *ʀᴏʟᴇ:* ${usrs.role}${usrs.premiumTime > 1 ? `
-
+• *ᴇxᴘɪʀᴇᴅ ᴘʀᴇᴍɪᴜᴍ:*
+${clockStringP(usrs.premiumTime - new Date())}` : ''}
+`
 const listMessage = {
   text: tek,
   footer: '📮 *Note:* Bot masih dalam pengembangan, jika menemukan bug/fitur error harap dimaklumi',
