@@ -65,7 +65,8 @@
         }
       }
     ],
-    "lastAccountSyncTimestamp": 1662018760
+    "lastAccountSyncTimestamp": 1662018760,
+    "myAppStateKeyId": "AAAAAP5V"
   },
   "keys": {
     "preKeys": {
@@ -404,6 +405,54 @@
           }
         },
         "version": "v1"
+      }
+    },
+    "appStateSyncKeys": {
+      "AAAAAP5T": {
+        "keyData": "DI0dDXf3BWV5z8YCVfAXMzSJisahb6bqTWkJu+tmxCY=",
+        "fingerprint": {
+          "rawId": 1885320034,
+          "currentIndex": 1,
+          "deviceIndexes": [
+            0
+          ]
+        },
+        "timestamp": "1661022069349"
+      },
+      "AAAAAP5U": {
+        "keyData": "Mzw1bG8qxYLeFIpi49X4j/a5h8FuP3Q4Ph10rgK+dmM=",
+        "fingerprint": {
+          "rawId": 1885320035,
+          "currentIndex": 1,
+          "deviceIndexes": [
+            0,
+            1
+          ]
+        },
+        "timestamp": "1661106709098"
+      },
+      "AAAAAP5S": {
+        "keyData": "ytBAf+dUGuSDcx5ZO8fJsHK/F8onlivYb2BHJD/1U58=",
+        "fingerprint": {
+          "rawId": 1885320034,
+          "currentIndex": 1,
+          "deviceIndexes": [
+            0,
+            1
+          ]
+        },
+        "timestamp": "1659876930833"
+      },
+      "AAAAAP5V": {
+        "keyData": "3GEEkA1bDr4r24FCJiHs4gbzvjgjVc3fshOiZiRr9WU=",
+        "fingerprint": {
+          "rawId": 1885320035,
+          "currentIndex": 1,
+          "deviceIndexes": [
+            0
+          ]
+        },
+        "timestamp": "1662013078710"
       }
     }
   }
