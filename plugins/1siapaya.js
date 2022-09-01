@@ -4,7 +4,7 @@ let handler = async (m, { conn, args, command }) => {
 let totalf = Object.values(global.plugins).filter(
     (v) => v.help && v.tags
   ).length;
- await conn.sendButton(m.chat, `Pesan ini dikirim oleh seseorang yang Identitasnya tidak ingin diketahui.\n`,wm + '\n\n' + botdate, url, [['OKELAH','bot']], m, {
+ await conn.sendButton(m.chat, `Pesan ini dikirim oleh seseorang yang Identitasnya tidak ingin diketahui.\n`,wm + '\n\n' + botdate, url, [['OKELAH','siapa']], m, {
 contextInfo: { externalAdReply :{
                         mediaUrl: '',
                         mediaType: 2,
