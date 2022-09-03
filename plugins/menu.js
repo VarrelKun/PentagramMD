@@ -25,16 +25,6 @@ const defaultMenu = {
 %m2 *Date:* %date
 %m3
 
-%m1 *I N F O*
-%m2 *Bot Name:* %me
-%m2 *Mode:* %mode
-%m2 *Platform:* %platform
-%m2 *Type:* Node.Js
-%m2 *Baileys:* Multi Device
-%m2 *Prefix:* [ *%_p* ]
-%m2 *Uptime:* %muptime
-%m3
-
 %m1 *I N F O  C M D* 
 %m4 *Ⓟ* = Premium
 %m4 *Ⓛ* = Limit
@@ -241,32 +231,32 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
 	},{
 	title: `${htki} MENU ${htka}`,
 	rows: [
-	    {title: `💬 ${pmenus} All`, rowId: ".? all", description: "Menampilkan Semua command BOT"},
-	    {title: `🌱 ${pmenus} Rpg`, rowId: ".? rpg", description: "Game Epic Rpg!"},
-	{title: `✨ ${pmenus} Exp`, rowId: ".? xp", description: "Ayo tingkatkan pangkat mu!"},
-        {title: `🧿 ${pmenus} APK DOWNLOAD`, rowId: ".apk", description: "Fitur berguna untuk mendownload Aplikasi"},
-	{title: `🎮 ${pmenus} Game`, rowId: ".? game", description: "Gamenya seru seru lho >-<"},
-	{title: `🧩 ${pmenus} Fun`, rowId: ".? fun", description: "Fitur yang aman untuk keluarga"},
-	{title: `☠ ${pmenus} Virus`, rowId: ".? virus", description: "Virus/Bug WhatsApp"},
-	{title: `🐚 ${pmenus} Kerang`, rowId: ".? kerangajaib", description: "Tanyakan pada ketua club"},
-	{title: `📑 ${pmenus} Quotes`, rowId: ".? quotes", description: "Random Inspirasi"},
-	{title: `⛩️ ${pmenus} Anime`, rowId: ".? anime", description: "Kamu wibu ya bang?"},
-	{title: `🔞 ${pmenus} Nsfw`, rowId: ".? nsfw", description: "Tch, dasar sagne"},
-	{title: `🌟 ${pmenus} Premium`, rowId: ".? premium", description: "Only premium Users"},
-	{title: `🎭 ${pmenus} Anonymous Chats`, rowId: ".? anonymous", description: "Bicara dengan orang tidak dikenal"},
-	{title: `📖 ${pmenus} Al-Quran`, rowId: ".? quran", description: "Tobat yuk kak"},
-	{title: `🌎 ${pmenus} Internet`, rowId: ".? internet", description: "Cari sesuatu diBOT"},
-	{title: `📩 ${pmenus} Downloaders`, rowId: ".? downloader", description: "Download sesuatu diBOT"},
-	{title: `🎨 ${pmenus} Stikers`, rowId: ".? stiker", description: "Buat Sticker diBOT"},
-	{title: `✏️ ${pmenus} Nulis`, rowId: ".? nulis", description: "Nulis kok males kak?"},
-	{title: `🎧 ${pmenus} Audio`, rowId: ".? audio", description: "Ubah Audio dengan Filter"},
-	{title: `🏢 ${pmenus} Group`, rowId: ".? group", description: "Only Groups"},
-	{title: `👑 ${pmenus} Admin`, rowId: ".? admin", description: "Only Admin Group"},
-	{title: `🗂️ ${pmenus} Database`, rowId: ".? database", description: "Simpan sesuatu diBOT"},
-	{title: `🛠️ ${pmenus} Tools`, rowId: ".? tools", description: "Mungkin tools ini bisa membantu?"},
-	{title: `ℹ️ ${pmenus} Info`, rowId: ".? info", description: "Info info BOT"},
-	{title: `👩‍💻 ${pmenus} Owner`, rowId: ".? owner", description: "Owner Only!"},
-	{title: `❓ ${pmenus} No Category`, rowId: ".? nocategory", description: "Fitur tanpa kategory!"},
+    {title: `╿💬╽All`, rowId: ".? all", description: "⤷ Menampilkan Semua command BOT"},
+    {title: `╿🌱╽Rpg`, rowId: ".? rpg", description: "⤷ Game Epic Rpg!"},
+	{title: `╿✨╽Exp`, rowId: ".? xp", description: "⤷ Ayo tingkatkan pangkat mu!"},
+    {title: `╿🧿╽ APK DOWNLOAD`, rowId: ".apk", description: "⤷ Fitur berguna untuk mendownload Aplikasi"},
+	{title: `╿🎮╽Game`, rowId: ".? game", description: "⤷ Gamenya seru seru lho >-<"},
+	{title: `╿🧩╽Fun`, rowId: ".? fun", description: "⤷ Fitur yang aman untuk keluarga"},
+	{title: `╿☠╽Virus`, rowId: ".? virus", description: "⤷ Virus/Bug WhatsApp"},
+	{title: `╿🐚╽ Kerang`, rowId: ".? kerangajaib", description: "⤷ Tanyakan pada ketua club"},
+	{title: `╿📑╽Quotes`, rowId: ".? quotes", description: "⤷ Random Inspirasi"},
+	{title: `╿⛩️╽Anime`, rowId: ".? anime", description: "⤷ Kamu wibu ya bang?"},
+	{title: `╿🔞╽Nsfw`, rowId: ".? nsfw", description: "⤷ Tch, dasar sagne"},
+	{title: `╿🌟╽Premium`, rowId: ".? premium", description: "⤷ Only premium Users"},
+	{title: `╿🎭╽Anonymous Chats`, rowId: ".? anonymous", description: "⤷ Bicara dengan orang tidak dikenal"},
+	{title: `╿📖╽Al-Quran`, rowId: ".? quran", description: "⤷ Tobat yuk kak"},
+	{title: `╿🌎╽Internet`, rowId: ".? internet", description: "⤷ Cari sesuatu diBOT"},
+	{title: `╿📩╽Downloaders`, rowId: ".? downloader", description: "⤷ Download sesuatu diBOT"},
+	{title: `╿🎨╽Stikers`, rowId: ".? stiker", description: "⤷ Buat Sticker diBOT"},
+	{title: `╿✏️╽Nulis`, rowId: ".? nulis", description: "⤷ Nulis kok males kak?"},
+	{title: `╿🎧╽Audio`, rowId: ".? audio", description: "⤷ Ubah Audio dengan Filter"},
+	{title: `╿🏢╽Group`, rowId: ".? group", description: "⤷ Only Groups"},
+	{title: `╿👑╽Admin`, rowId: ".? admin", description: "⤷ Only Admin Group"},
+	{title: `╿🗂️╽Database`, rowId: ".? database", description: "⤷ Simpan sesuatu diBOT"},
+	{title: `╿🛠️╽Tools`, rowId: ".? tools", description: "⤷ Mungkin tools ini bisa membantu?"},
+	{title: `╿ℹ️╽Info`, rowId: ".? info", description: "⤷ Info info BOT"},
+	{title: `╿👩‍╽Owner`, rowId: ".? owner", description: "⤷ Owner Only!"},
+	{title: `╿❓╽No Category`, rowId: ".? nocategory", description: "⤷ Fitur tanpa kategory!"},
 	]
   },
 ]
@@ -279,12 +269,11 @@ let tek = `*${ucapan()} ${conn.getName(m.sender)}*
 • *sᴛᴀᴛᴜs:* ${m.sender.split`@`[0] == nomorown ? 'Developer' : (usrs.premiumTime >= 1 ? 'Premium User' : 'Free User')}
 • *ᴘʀᴇᴍɪᴜᴍ:* ${usrs.premiumTime > 1 ? 'Yes': 'No'}
 • *ʀᴏʟᴇ:* ${usrs.role}${usrs.premiumTime > 1 ? `
-• *ᴇxᴘɪʀᴇᴅ ᴘʀᴇᴍɪᴜᴍ:*
-${clockStringP(usrs.premiumTime - new Date())}` : ''}
+
 `
 const listMessage = {
   text: tek,
-  footer: '📮 *Note:* Bot masih dalam pengembangan, jika menemukan bug/fitur error harap dimaklumi',
+  footer: '⚠️ *Note:* Bot masih dalam pengembangan, jika menemukan bug/fitur error harap dimaklumi',
   mentions: await conn.parseMention(tek),
   title: `${htki} *LIST MENU* ${htka}`,
   buttonText: `LIST MENU ⎙`,

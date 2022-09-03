@@ -33,7 +33,7 @@ let tesk = '🚀 *ʟɪɴᴋ:* '
 let pros = '_*ᴄ ᴏ ɴ ᴠ ᴇ ʀ ᴛ ɪ ɴ ɢ . . .*_'
 //TINY
 if (args[1] == "tinyurl") {
-	let tiny = await (await fetch(`https://pentagrp.herokuapp.com/api/short/tiny?url=google.com&apikey=penTagram`)).json()
+	let tiny = await (await fetch(`https://pentagrp.herokuapp.com/api/short/tiny?url=${args[0]}&apikey=penTagram`)).json()
 m.reply(pros).then(_ => conn.reply(m.chat, `${tesk}${tiny.result}`,m))
 }
 //--------------
