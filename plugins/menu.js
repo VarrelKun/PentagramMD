@@ -269,7 +269,8 @@ let tek = `*${ucapan()} ${conn.getName(m.sender)}*
 • *sᴛᴀᴛᴜs:* ${m.sender.split`@`[0] == nomorown ? 'Developer' : (usrs.premiumTime >= 1 ? 'Premium User' : 'Free User')}
 • *ᴘʀᴇᴍɪᴜᴍ:* ${usrs.premiumTime > 1 ? 'Yes': 'No'}
 • *ʀᴏʟᴇ:* ${usrs.role}${usrs.premiumTime > 1 ? `
-
+• *ᴇxᴘɪʀᴇᴅ ᴘʀᴇᴍɪᴜᴍ:*
+${clockStringP(usrs.premiumTime - new Date())}` : ''}`
 `
 const listMessage = {
   text: tek,
