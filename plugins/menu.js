@@ -44,7 +44,7 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
   if (teks == 'all') tags = {
   'main': 'Main',
   'apk': 'Apk',
-  'image': 'Image'
+  'image': 'Image',
   'game': 'Game',
   'rpg': 'RPG Games',
   'xp': 'Exp & Limit',
