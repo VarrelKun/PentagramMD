@@ -263,14 +263,13 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
 
 let usrs = db.data.users[m.sender]
 let tek = `*${ucapan()} ${conn.getName(m.sender)}*
-*U S E R  I N F O*
 • *ɴᴀᴍᴇ:* ${usrs.registered ? usrs.name : conn.getName(m.sender)}
 • *ᴛᴀɢs:* @${m.sender.split`@`[0]}
 • *sᴛᴀᴛᴜs:* ${m.sender.split`@`[0] == nomorown ? 'Developer' : (usrs.premiumTime >= 1 ? 'Premium User' : 'Free User')}
 • *ᴘʀᴇᴍɪᴜᴍ:* ${usrs.premiumTime > 1 ? 'Yes': 'No'}
 • *ʀᴏʟᴇ:* ${usrs.role}${usrs.premiumTime > 1 ? `
 • *ᴇxᴘɪʀᴇᴅ ᴘʀᴇᴍɪᴜᴍ:*
-${clockStringP(usrs.premiumTime - new Date())}` : ''}`
+${clockStringP(usrs.premiumTime - new Date())}` : ''}
 `
 const listMessage = {
   text: tek,
