@@ -39,11 +39,12 @@ const defaultMenu = {
 let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
 	let tags
 	let teks = `${args[0]}`.toLowerCase()
-  let arrayMenu = ['all', 'anime', 'update', 'maker', 'apk', 'edukasi', 'news', 'random', 'game', 'xp', 'islamic', 'stiker', 'rpg', 'virus', 'kerangajaib', 'quotes', 'admin', 'group', 'premium', 'internet', 'anonymous', 'nulis', 'downloader', 'tools', 'fun', 'database','quran', 'vote', 'nsfw', 'audio', 'jadibot', 'info', 'owner', 'nocategory']
+  let arrayMenu = ['all', 'anime', 'image', 'update', 'maker', 'apk', 'edukasi', 'news', 'random', 'game', 'xp', 'islamic', 'stiker', 'rpg', 'virus', 'kerangajaib', 'quotes', 'admin', 'group', 'premium', 'internet', 'anonymous', 'nulis', 'downloader', 'tools', 'fun', 'database','quran', 'vote', 'nsfw', 'audio', 'jadibot', 'info', 'owner', 'nocategory']
   if (!arrayMenu.includes(teks)) teks = '404'
   if (teks == 'all') tags = {
   'main': 'Main',
   'apk': 'Apk',
+  'image': 'Image'
   'game': 'Game',
   'rpg': 'RPG Games',
   'xp': 'Exp & Limit',
@@ -78,6 +79,9 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
   }
   if (teks == 'anime') tags = {
     'anime': 'Anime'
+  }
+  if (teks == 'image') tags = {
+    'image': 'Image'
   }
   if (teks == 'nsfw') tags = {
     'nsfw': 'Nsfw'
@@ -234,7 +238,8 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
     {title: `╿💬╽All`, rowId: ".? all", description: "⤷ Menampilkan Semua command BOT"},
     {title: `╿🌱╽Rpg`, rowId: ".? rpg", description: "⤷ Game Epic Rpg!"},
 	{title: `╿✨╽Exp`, rowId: ".? xp", description: "⤷ Ayo tingkatkan pangkat mu!"},
-    {title: `╿🧿╽ APK DOWNLOAD`, rowId: ".apk", description: "⤷ Fitur berguna untuk mendownload Aplikasi"},
+        {title: `╿🧿╽APK DOWNLOAD`, rowId: ".apk", description: "⤷ Fitur berguna untuk mendownload Aplikasi"},
+        {title: `╿📸╽Image`, rowId: ".? image", description: "⤷ Random search image"},
 	{title: `╿🎮╽Game`, rowId: ".? game", description: "⤷ Gamenya seru seru lho >-<"},
 	{title: `╿🧩╽Fun`, rowId: ".? fun", description: "⤷ Fitur yang aman untuk keluarga"},
 	{title: `╿☠╽Virus`, rowId: ".? virus", description: "⤷ Virus/Bug WhatsApp"},
