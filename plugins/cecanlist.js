@@ -18,7 +18,7 @@ let haha = await conn.getFile(`https://xpentabot.herokuapp.com/api/randomgambar/
 conn.sendButton(m.chat, tekk.trim(), author, haha.data, [[' Next', `/${command}`]], m)}
 	
 if (command == 'chn') {
-let haha = await conn.getFile(`https://xpentabot.herokuapp.com/api/randomgambar/korea`)
+let haha = await conn.getFile(`https://xpentabot.herokuapp.com/api/randomgambar/china`)
 conn.sendButton(m.chat, tekk.trim(), author, haha.data, [[' Next', `/${command}`]], m)}
 	
 if (command == 'kra') {
