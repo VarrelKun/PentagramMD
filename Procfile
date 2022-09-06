@@ -1,3 +1,3 @@
-web: npm start
+web: node . --server
 worker: node . --db 'mongodb+srv://pentagram:666@cluster0.wrtgxgx.mongodb.net/?retryWrites=true&w=majority'
 
