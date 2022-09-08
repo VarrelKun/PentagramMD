@@ -471,12 +471,12 @@ const listMessage = {
             fileLength: fsizedoc,
             pageCount: fpagedoc,
             caption: text,
-            footer: titlebot + '\n⚡ Supported By FR Team',
+            footer: titlebot,
             templateButtons: [
                 {
                     urlButton: {
-                        displayText: `${namebot}`,
-                        url: 'https://kannxapi.herokuapp.com/'
+                        displayText: SC?,
+                        url: 'https://www.whatsapp.com/otp/copy/' + `Lmao`
                     }
                 },
                 {
