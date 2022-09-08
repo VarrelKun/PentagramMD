@@ -214,9 +214,9 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
     },{
 	title: `${htki} SUPPORT ${htka}`,
 	rows: [
-	    {title: `🔖 ${pmenus} SEWA`, rowId: ".sewa", description: "Menampilkan list harga sewa BOT"},
+	    {title: `🛒 ${pmenus} OWNER SHOP`, rowId: ".store", description: "Custom Design By Owner"},
 	    {title: `🌟 ${pmenus} BUY PREMIUM`, rowId: ".premium", description: "Menampilkan list harga premium"},
-	    {title: `💹 ${pmenus} DONASI`, rowId: ".donasi", description: 'Support BOT agar lebih fast respon'},
+	    {title: `💳 ${pmenus} DONASI`, rowId: ".donasi", description: 'Support BOT agar lebih fast respon'},
 	]
 	},{
 	title: `${htki} MENU ${htka}`,
@@ -481,7 +481,7 @@ const listMessage = {
                 },
                 {
                     urlButton: {
-                        displayText: 'Group Official',
+                        displayText: 'Group BOT',
                         url: sgc
                     }
                 },
@@ -493,14 +493,14 @@ const listMessage = {
                 },
                 {
                     quickReplyButton: {
-                        displayText: 'Speed',
-                        id: '.ping'
+                        displayText: 'Donasi',
+                        id: '.donasi'
                     }
                 },
                 {
                     quickReplyButton: {
-                        displayText: 'Donasi',
-                        id: '.donasi'
+                        displayText: 'Shop',
+                        id: '.store'
                     }
                 },
             ]
