@@ -475,7 +475,7 @@ const listMessage = {
             templateButtons: [
                 {
                     urlButton: {
-                        displayText: SC?,
+                        displayText: 'SC?',
                         url: 'https://www.whatsapp.com/otp/copy/' + `Lmao`
                     }
                 },
