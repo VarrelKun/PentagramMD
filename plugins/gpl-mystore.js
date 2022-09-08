@@ -27,5 +27,5 @@ contextInfo: { externalAdReply :{
 })
 }
 
-handler.command = ['store']
+handler.command = /^store$/i
 export default handler
