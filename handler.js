@@ -294,13 +294,13 @@ export async function handler(chatUpdate) {
                 if (!('isBanned' in chat))
                     chat.isBanned = false
                 if (!('welcome' in chat))
-                    chat.welcome = true
+                    chat.welcome = false
                 if (!('detect' in chat))
-                    chat.detect = false
+                    chat.detect = false 
                 if (!('sWelcome' in chat))
-                    chat.sWelcome = true
+                    chat.sWelcome = ''
                 if (!('sBye' in chat))
-                    chat.sBye = true
+                    chat.sBye = ''
                 if (!('sPromote' in chat))
                     chat.sPromote = ''
                 if (!('sDemote' in chat))
@@ -326,16 +326,16 @@ export async function handler(chatUpdate) {
             } else
                 global.db.data.chats[m.chat] = {
                     isBanned: false,
-                    welcome: true,
-                    detect: true,
-                    sWelcome: true,
-                    sBye: true,
+                    welcome: false 
+                    detect: false,
+                    sWelcome: '',
+                    sBye: '',
                     sPromote: '',
                     sDemote: '',
                     delete: true,
                     antiLink: false,
                     sticker: false,
-                    viewonce: false,
+                    viewonce: true,
                     antiToxic: false,
                     simi: false,
                     expired: 0,
