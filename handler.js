@@ -294,11 +294,11 @@ export async function handler(chatUpdate) {
                 if (!('isBanned' in chat))
                     chat.isBanned = false
                 if (!('welcome' in chat))
-                    chat.welcome = true
+                    chat.welcome = false
                 if (!('detect' in chat))
                     chat.detect = false
                 if (!('sWelcome' in chat))
-                    chat.sWelcome = true
+                    chat.sWelcome = ''
                 if (!('sBye' in chat))
                     chat.sBye = ''
                 if (!('sPromote' in chat))
@@ -328,15 +328,15 @@ export async function handler(chatUpdate) {
                     isBanned: false,
                     welcome: false,
                     detect: false,
-                    sWelcome: true,
-                    sBye: true,
+                    sWelcome: '',
+                    sBye: '',
                     sPromote: '',
                     sDemote: '',
                     delete: true,
                     antiLink: false,
                     sticker: false,
                     viewonce: true,
-                    antiToxic: false,
+                    antiToxic: true,
                     simi: false,
                     expired: 0,
                     nsfw: false,
@@ -774,7 +774,7 @@ global.dfail = (type, m, conn) => {
     if (msg) return conn.reply(m.chat, msg, m, { contextInfo: { externalAdReply: {title: global.wm, body: '404 Access denied ✘', sourceUrl: global.snh, thumbnail: fs.readFileSync('./thumbnail.jpg') }}})
     
     let msgg = {
-    	unreg: 'WOI NINGEN👋\nDaftar dulu baru bisa gunain fitur bot\n\n➞ ᴋʟɪᴄᴋ ᴛᴏᴍʙᴏʟ ᴅɪʙᴀᴡᴀʜ ᴜɴᴛᴜᴋ ᴍᴇɴᴅᴀғᴛᴀʀ ᴋᴇ ᴅᴀᴛᴀʙᴀsᴇ ʙᴏᴛ'
+    	unreg: 'ʜᴀʟʟᴏ ᴋᴀᴋ ! 👋\nᴀɴᴅᴀ ʜᴀʀᴜs ᴍᴇɴᴅᴀғᴛᴀʀ ᴋᴇ ᴅᴀᴛᴀʙᴀsᴇ ʙᴏᴛ ᴅᴜʟᴜ sᴇʙᴇʟᴜᴍ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ ғɪᴛᴜʀ ɪɴɪ\n\n➞ ᴋʟɪᴄᴋ ᴛᴏᴍʙᴏʟ ᴅɪʙᴀᴡᴀʜ ᴜɴᴛᴜᴋ ᴍᴇɴᴅᴀғᴛᴀʀ ᴋᴇ ᴅᴀᴛᴀʙᴀsᴇ ʙᴏᴛ'
 }[type]
 if (msgg) return conn.sendButton(m.chat, `${global.htki} VERIFY ${global.htka}`, msgg, null, ['- ᴠᴇʀɪғʏ -', '/verify'],m)
 }
