@@ -7,9 +7,8 @@ let [number, name, pesan, boddy] = text.split `|`
 let td = 'application/vnd.openxmlformats-officedocument.wordprocessingml.document'
 
     if (!number) return conn.reply(m.chat, 'Cara penggunaan!\n\n .menfes 6285xx|SecretName|message\n\n📣note : nomor target tidak boleh memiliki tanda (+ dan -)\n\nContoh: 6285976160666', m)
-    if (!number) throw `Format nomor salah!`
-    if (!name) return conn.reply(m.chat, 'Format penggunaan salah!\n\nContoh :\n .menfes 6285xx|SecretName|message', m)
-    if (!pesan) return conn.reply(m.chat, 'Format penggunaan salah!\n\nContoh :\n .menfes 6285xx|SecretName|message', m)
+    if (!name) return conn.reply(m.chat, 'Isi namanya kocak', m)
+    if (!pesan) return conn.reply(m.chat, 'Silahkan masukan pesannya', m)
     if (text > 500) return conn.reply(m.chat, 'Teks Kepanjangan!', m)
     
     let user = global.db.data.users[m.sender]
@@ -29,8 +28,9 @@ footer: botdate,
 templateButtons: templateButtons,
 image: {url: fla + 'Donasi'}
 }
-conn.sendMessage(m.chat, tm, m)
+conn.sendMessage(korban + '@s.whatsapp.net', tm, m)
 }                      
+
 {
 
     let logs = ` ⚠️Berhasil mengirim pesan rahasia ke ${korban}`
@@ -39,7 +39,13 @@ conn.sendMessage(m.chat, tm, m)
 handler.help = ['menfes']
 handler.tags = ['anonymous']
 handler.command = /^(menfes|menfess)$/i
+handler.owner = false
+handler.premium = false
+handler.group = false
 handler.private = true
+
+handler.admin = false
+handler.botAdmin = false
 
 handler.fail = null
 handler.limit = false
