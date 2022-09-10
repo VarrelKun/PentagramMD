@@ -19,8 +19,18 @@ let td = 'application/vnd.openxmlformats-officedocument.wordprocessingml.documen
     var nomor = m.sender
     let spam1 = `📩 ʜɪ ᴋᴀᴋ! ᴋᴀᴍᴜ ᴀᴅᴀ ᴩᴇꜱᴀɴ ʀᴀʜᴀꜱɪᴀ ᴅᴀʀɪ ꜱᴇꜱᴇᴏʀᴀɴɢ ɴɪʜ\n\n𝘿𝙖𝙧𝙞 : ${name}\n𝙋𝙚𝙨𝙖𝙣 : ${pesan}`
 
+    const templateButtons = [
+    {index: 1, quickReplyButton: {displayText: 'Menu', id: '.menu'}},
+    {index: 2, quickReplyButton: {displayText: 'Dari Siapa?', id: '.gpls'}},
+]
+let tm = {
+text: spam1,
+footer: botdate,
+templateButtons: templateButtons,
+image: {url: fla + 'Donasi'}
+}
 conn.sendMessage(m.chat, tm, m)
-
+}                      
 {
 
     let logs = ` ⚠️Berhasil mengirim pesan rahasia ke ${korban}`
