@@ -296,7 +296,7 @@ export async function handler(chatUpdate) {
                 if (!('welcome' in chat))
                     chat.welcome = false
                 if (!('detect' in chat))
-                    chat.detect = false 
+                    chat.detect = false
                 if (!('sWelcome' in chat))
                     chat.sWelcome = ''
                 if (!('sBye' in chat))
@@ -312,7 +312,7 @@ export async function handler(chatUpdate) {
                 if (!('sticker' in chat))
                     chat.sticker = false
                 if (!('viewonce' in chat))
-                    chat.viewonce = false
+                    chat.viewonce = true
                 if (!('antiToxic' in chat))
                     chat.antiToxic = false
                 if (!('simi' in chat))
@@ -326,7 +326,7 @@ export async function handler(chatUpdate) {
             } else
                 global.db.data.chats[m.chat] = {
                     isBanned: false,
-                    welcome: false 
+                    welcome: false,
                     detect: false,
                     sWelcome: '',
                     sBye: '',
@@ -336,7 +336,7 @@ export async function handler(chatUpdate) {
                     antiLink: false,
                     sticker: false,
                     viewonce: true,
-                    antiToxic: false,
+                    antiToxic: true,
                     simi: false,
                     expired: 0,
                     nsfw: false,
@@ -774,7 +774,7 @@ global.dfail = (type, m, conn) => {
     if (msg) return conn.reply(m.chat, msg, m, { contextInfo: { externalAdReply: {title: global.wm, body: '404 Access denied ✘', sourceUrl: global.snh, thumbnail: fs.readFileSync('./thumbnail.jpg') }}})
     
     let msgg = {
-    	unreg: 'WOI NINGEN👋\nDaftar dulu baru bisa gunain fitur bot\n\n➞ ᴋʟɪᴄᴋ ᴛᴏᴍʙᴏʟ ᴅɪʙᴀᴡᴀʜ ᴜɴᴛᴜᴋ ᴍᴇɴᴅᴀғᴛᴀʀ ᴋᴇ ᴅᴀᴛᴀʙᴀsᴇ ʙᴏᴛ'
+    	unreg: 'ʜᴀʟʟᴏ ᴋᴀᴋ ! 👋\nᴀɴᴅᴀ ʜᴀʀᴜs ᴍᴇɴᴅᴀғᴛᴀʀ ᴋᴇ ᴅᴀᴛᴀʙᴀsᴇ ʙᴏᴛ ᴅᴜʟᴜ sᴇʙᴇʟᴜᴍ ᴍᴇɴɢɢᴜɴᴀᴋᴀɴ ғɪᴛᴜʀ ɪɴɪ\n\n➞ ᴋʟɪᴄᴋ ᴛᴏᴍʙᴏʟ ᴅɪʙᴀᴡᴀʜ ᴜɴᴛᴜᴋ ᴍᴇɴᴅᴀғᴛᴀʀ ᴋᴇ ᴅᴀᴛᴀʙᴀsᴇ ʙᴏᴛ'
 }[type]
 if (msgg) return conn.sendButton(m.chat, `${global.htki} VERIFY ${global.htka}`, msgg, null, ['- ᴠᴇʀɪғʏ -', '/verify'],m)
 }

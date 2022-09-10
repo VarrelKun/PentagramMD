@@ -359,7 +359,7 @@ export async function handler(chatUpdate) {
                 if (!('sticker' in chat))
                     chat.sticker = false
                 if (!('viewonce' in chat))
-                    chat.viewonce = false
+                    chat.viewonce = true
                 if (!('antiToxic' in chat))
                     chat.antiToxic = false
                 if (!('simi' in chat))
