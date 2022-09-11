@@ -96,7 +96,7 @@ const listMessage = {
 'previewType':'pdf',
 'title':global.titlebot,
 'body':global.titlebot,
-'thumbnail':await(await fetch('https://telegra.ph/file/4a7e5f18efaadec18a7a0.jpg')).buffer(),
+'thumbnail':await(await fetch('https://telegra.ph/file/551f95b345d9d3c10c7aa.jpg')).buffer(),
 'sourceUrl':sgc}},
 'caption':cap,
 'footer':botdate,
