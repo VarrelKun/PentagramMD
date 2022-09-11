@@ -461,7 +461,17 @@ const listMessage = {
     
     //------- BUTTON DOC WITH EXTERNAL ADS
     // MAMPUS DI ENC :v
-    
+    await conn.sendButton(m.chat, `═┅═❏ *DASHBOARD* ❏═┅═`, text, fla, [['Menu', '.menu']], m, {
+contextInfo: { externalAdReply :{
+                        mediaUrl: sig,
+                        mediaType: 2,
+                        description: 'anu',
+                        title: titlebot,
+                        body: bottime,          previewType: 1,
+                        thumbnail: fs.readFileSync("./darkness.jpg"),
+                        sourceUrl: 'https://youtube.com/c/nxvall'
+                      }}
+})
 //-------DOC TEMPLATE
     const message = {
             document: { url: thumbdoc },
@@ -471,7 +481,7 @@ const listMessage = {
             fileLength: fsizedoc,
             pageCount: fpagedoc,
             caption: text,
-            footer: titlebot,
+            footer: botdate,
             templateButtons: [
                 {
                     urlButton: {
@@ -505,7 +515,7 @@ const listMessage = {
                 },
             ]
         }
-        await conn.sendMessage(m.chat, message, m, { mentionedJid: [m.sender] })
+        //await conn.sendMessage(m.chat, message, wm, m, { mentionedJid: [m.sender] })
         
     //------------------- BUTTON VID
     //conn.sendButton(m.chat, text, wm, 'https://telegra.ph/file/a46ab7fa39338b1f54d5a.mp4', [['Ping', '.ping'],['Owner', '.owner'],['Donasi', '.donasi']],ftoko, { gifPlayback: true, contextInfo: { externalAdReply: {title: namebot, body: bottime, sourceUrl: sig, thumbnail: fs.readFileSync('./thumbnail.jpg') }}})
