@@ -18,6 +18,7 @@ let td = 'application/vnd.openxmlformats-officedocument.wordprocessingml.documen
     let from = `${name}`
     var nomor = m.sender
     let spam1 = `📩 ʜɪ ᴋᴀᴋ! ᴋᴀᴍᴜ ᴀᴅᴀ ᴩᴇꜱᴀɴ ʀᴀʜᴀꜱɪᴀ ᴅᴀʀɪ ꜱᴇꜱᴇᴏʀᴀɴɢ ɴɪʜ\n\n𝘿𝙖𝙧𝙞 : ${name}\n𝙋𝙚𝙨𝙖𝙣 : ${pesan}`
+    let foot = `Kamu blom bisa membalas pesan menfes ini ke pengirim, jadi ss aja buat SW siapa tau orang yg ngirim ngaku.\n\nKalo mau gunain fiturnya tinggal ketik .𝙢𝙚𝙣𝙛𝙚𝙨`
 
     const templateButtons = [
     {index: 1, quickReplyButton: {displayText: 'Menu', id: '.menu'}},
@@ -25,7 +26,7 @@ let td = 'application/vnd.openxmlformats-officedocument.wordprocessingml.documen
 ]
 let tm = {
 text: spam1,
-footer: botdate,
+footer: foot,
 templateButtons: templateButtons,
 image: {url: fla + 'Donasi'}
 }
