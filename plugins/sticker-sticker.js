@@ -2,8 +2,11 @@ import { sticker } from '../lib/sticker.js'
 import uploadFile from '../lib/uploadFile.js'
 import uploadImage from '../lib/uploadImage.js'
 import { webp2png } from '../lib/webp2mp4.js'
+import fs from 'fs'
 
 let handler = async (m, { conn, args, usedPrefix, command }) => {
+
+let pp = fs.readFileSync('./darkness.jpg')
 
   let stiker = false
   try {
@@ -33,7 +36,16 @@ let handler = async (m, { conn, args, usedPrefix, command }) => {
     console.error(e)
     if (!stiker) stiker = e
   } finally {
-    if (stiker) conn.sendFile(m.chat, stiker, 'sticker.webp', '', m)
+    if (stiker) conn.sendMessage(m.chat,  { sticker : stiker, thumbnail: pp , contextInfo:{  externalAdReply: { showAdAttribution: true,
+mediaType:  1,
+mediaUrl: sig,
+title: 'Nih Stikernya',
+body: titlebot,
+sourceUrl: sig,
+thumbnail: pp
+  }
+ }}
+)
     else throw 'Conversion failed'
   }
 }
