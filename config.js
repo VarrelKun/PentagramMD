@@ -125,6 +125,8 @@ global.author = global.wm
 
 
 /*============== LOGO ==============*/
+global.cute = ['https://telegra.ph/file/ca7d9376258157f01bebb.jpg', 'https://telegra.ph/file/0edda48d08cfff657c291.jpg', 'https://telegra.ph/file/7e45b5dae5fbba46f382b.jpg', 'https://telegra.ph/file/d4919bc83320629db7444.jpg', 'https://telegra.ph/file/079e3812ca37e20e7de1a.jpg', 'https://telegra.ph/file/4bb17c614f65620cb5852.jpg', 'https://telegra.ph/file/9c0e024e0b1cc1caaa61d.jpg', 'https://telegra.ph/file/d5c2c37297ff4baf42337.jpg', 'https://telegra.ph/file/fa33ba767d2adebbd7402.jpg', 'https://telegra.ph/file/43a5f138fb3743f258de8.jpg', 'https://telegra.ph/file/bad0bbfc7d19ea6bcfa9e.jpg', 'https://telegra.ph/file/05ac0d6ea2a5212ee092e.jpg', 'https://telegra.ph/file/27f8b54a27aefcd03116b.jpg', 'https://telegra.ph/file/12be51d9d3d624d3e900d.jpg'] 
+
 global.thumb = 'https://telegra.ph/file/162d60896b53c2e885c40.jpg' //Main Thumbnail
 global.thumb2 = 'https://telegra.ph/file/162d60896b53c2e885c40.jpg'
 global.thumbbc = 'https://telegra.ph/file/162d60896b53c2e885c40.jpg' //For broadcast
