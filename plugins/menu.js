@@ -469,17 +469,36 @@ const listMessage = {
     
     conn.sendFile(m.chat, dj, m)
     
-    await conn.sendButton(m.chat, `═┅═❏ *DASHBOARD* ❏═┅═`, text, fla, [['Menu', '.menu']], m, {
-contextInfo: { externalAdReply :{
-                        mediaUrl: sig,
-                        mediaType: 2,
-                        description: 'anu',
-                        title: titlebot,
-                        body: bottime,          previewType: 1,
-                        thumbnail: fs.readFileSync("./darkness.jpg"),
-                        sourceUrl: 'https://youtube.com/c/nxvall'
-                      }}
-})
+    let url = cute[Math.floor(Math.random() * cute.length)]
+global.cute = ['https://telegra.ph/file/ca7d9376258157f01bebb.jpg', 'https://telegra.ph/file/0edda48d08cfff657c291.jpg', 'https://telegra.ph/file/7e45b5dae5fbba46f382b.jpg', 'https://telegra.ph/file/d4919bc83320629db7444.jpg', 'https://telegra.ph/file/079e3812ca37e20e7de1a.jpg', 'https://telegra.ph/file/4bb17c614f65620cb5852.jpg', 'https://telegra.ph/file/9c0e024e0b1cc1caaa61d.jpg', 'https://telegra.ph/file/d5c2c37297ff4baf42337.jpg', 'https://telegra.ph/file/fa33ba767d2adebbd7402.jpg', 'https://telegra.ph/file/43a5f138fb3743f258de8.jpg', 'https://telegra.ph/file/bad0bbfc7d19ea6bcfa9e.jpg', 'https://telegra.ph/file/05ac0d6ea2a5212ee092e.jpg', 'https://telegra.ph/file/27f8b54a27aefcd03116b.jpg', 'https://telegra.ph/file/12be51d9d3d624d3e900d.jpg'] 
+
+
+let buttonMessage= {
+'document':{'url':sgc},
+'mimetype':global.ddocx,
+'fileName':'═┅═❏ *DASHBOARD* ❏═┅═',
+'fileLength':fsizedoc,
+'pageCount':fpagedoc,
+'contextInfo':{
+'externalAdReply':{
+'showAdAttribution':true,
+'mediaUrl':global.sig,
+'mediaType':2,
+'previewType':'pdf',
+'title':global.titlebot,
+'body':botdate,
+'thumbnail':await(await fetch(url)).buffer(),
+'sourceUrl':sgc}},
+'caption':wm,
+'footer':text,
+'buttons':[
+{'buttonId':'.menu','buttonText':{'displayText':'Menu'},'type':1},
+{'buttonId':'.sewa','buttonText':{'displayText':'Sewa'},'type':1}
+],
+'headerType':6}
+    await conn.sendMessage(m.chat,buttonMessage, { quoted:m})
+
+
 //-------DOC TEMPLATE
     const message = {
             document: { url: thumbdoc },
