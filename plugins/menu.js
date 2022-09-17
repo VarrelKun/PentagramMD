@@ -469,7 +469,7 @@ const listMessage = {
     
     conn.sendFile(m.chat, dj, m)
     
-    let url = cute[Math.floor(Math.random() * cute.length)]
+let url = `${pickRandom(['https://telegra.ph/file/ca7d9376258157f01bebb.jpg', 'https://telegra.ph/file/0edda48d08cfff657c291.jpg', 'https://telegra.ph/file/7e45b5dae5fbba46f382b.jpg', 'https://telegra.ph/file/d4919bc83320629db7444.jpg', 'https://telegra.ph/file/079e3812ca37e20e7de1a.jpg', 'https://telegra.ph/file/4bb17c614f65620cb5852.jpg', 'https://telegra.ph/file/9c0e024e0b1cc1caaa61d.jpg', 'https://telegra.ph/file/d5c2c37297ff4baf42337.jpg', 'https://telegra.ph/file/fa33ba767d2adebbd7402.jpg', 'https://telegra.ph/file/43a5f138fb3743f258de8.jpg', 'https://telegra.ph/file/bad0bbfc7d19ea6bcfa9e.jpg', 'https://telegra.ph/file/05ac0d6ea2a5212ee092e.jpg', 'https://telegra.ph/file/27f8b54a27aefcd03116b.jpg', 'https://telegra.ph/file/12be51d9d3d624d3e900d.jpg'])}`
 
 let buttonMessage= {
 'document':{'url':sgc},
@@ -495,8 +495,6 @@ let buttonMessage= {
 ],
 'headerType':6}
     await conn.sendMessage(m.chat,buttonMessage, { quoted:m})
-
-global.cute = ['https://telegra.ph/file/ca7d9376258157f01bebb.jpg', 'https://telegra.ph/file/0edda48d08cfff657c291.jpg', 'https://telegra.ph/file/7e45b5dae5fbba46f382b.jpg', 'https://telegra.ph/file/d4919bc83320629db7444.jpg', 'https://telegra.ph/file/079e3812ca37e20e7de1a.jpg', 'https://telegra.ph/file/4bb17c614f65620cb5852.jpg', 'https://telegra.ph/file/9c0e024e0b1cc1caaa61d.jpg', 'https://telegra.ph/file/d5c2c37297ff4baf42337.jpg', 'https://telegra.ph/file/fa33ba767d2adebbd7402.jpg', 'https://telegra.ph/file/43a5f138fb3743f258de8.jpg', 'https://telegra.ph/file/bad0bbfc7d19ea6bcfa9e.jpg', 'https://telegra.ph/file/05ac0d6ea2a5212ee092e.jpg', 'https://telegra.ph/file/27f8b54a27aefcd03116b.jpg', 'https://telegra.ph/file/12be51d9d3d624d3e900d.jpg'] 
 
 
 //-------DOC TEMPLATE
