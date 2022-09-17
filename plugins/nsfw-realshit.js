@@ -2,16 +2,16 @@ let handler = async (m, { conn }) => {
 let info = `
 *${htki} REAL SHIT ${htka}*
           
-           : Premium
-           : Free (but still using limit)
+         Ⓟ: Premium
+         Ⓛ: Free (but still using limit)
           
- *�Jangan Lupa Berdonasi :D*
+ *®Jangan Lupa Berdonasi :D*
 `
 const sections = [
    {
     title: `REAL SHIT`,
 	rows: [
-	    {title: " | Cosplay", rowId: '.18csply'},
+	    {title: "Ⓛ | Cosplay", rowId: '.18csply'},
 	    {title: "", rowId: '', description: 'Coming Soon' },
 	{title: "", rowId: '', description: 'Coming Soon' },
 	{title: "", rowId: '', description: 'Coming Soon' },
@@ -31,7 +31,7 @@ const listMessage = {
 await conn.sendMessage(m.chat, listMessage, { quoted: m})
 
 conn.sendFile(m.chat, vn, m)
-//conn.sendHydrated(m.chat, info, wm, null, sgc, "🌎 Group Official", null,null, [['Owner','.owner']], m)
+//conn.sendHydrated(m.chat, info, wm, null, sgc, "ðŸŒŽ Group Official", null,null, [['Owner','.owner']], m)
 }
 handler.help = ['realshit']
 handler.tags = ['nsfw']
