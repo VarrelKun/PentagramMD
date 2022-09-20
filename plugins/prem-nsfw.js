@@ -37,7 +37,6 @@ let { MessageType } = (await import('@adiwajshing/baileys')).default
 import fetch from 'node-fetch'
 
 
-import neko from 'nekos.life'
 
 
 //---------------------------------
