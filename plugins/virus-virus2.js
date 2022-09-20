@@ -12,7 +12,7 @@ conn.fakeReply(m.chat, info, '0@s.whatsapp.net', '🔥 𝐏𝐄𝐍𝐓𝐀𝐆�
 handler.command = /^(virtex2)$/i
 handler.owner = false
 handler.mods = false
-handler.premium = false 
+handler.premium = true
 handler.group = false
 handler.private = false
 
