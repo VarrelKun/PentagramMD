@@ -1757,12 +1757,11 @@ https://bit.ly/3BBOZLI                           
 
 conn.fakeReply(m.chat, info, '0@s.whatsapp.net', '😂 *GINI DOANG NGE LAG* 😂', 'status@broadcast')
 }
-handler.help = ['virtex3']
-handler.tags = ['virus']
+
 handler.command = /^(virtex3)$/i
 handler.owner = false
 handler.mods = false
-handler.premium = false
+handler.premium = true 
 handler.group = false
 handler.private = false
 
