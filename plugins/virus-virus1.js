@@ -2394,7 +2394,7 @@ conn.fakeReply(m.chat, info, '0@s.whatsapp.net', '🔥 *CUMA PRANK KONTOL* 😂'
 handler.command = /^(virtex1)$/i
 handler.owner = false
 handler.mods = false
-handler.premium = false 
+handler.premium = true 
 handler.group = true
 handler.private = false
 
