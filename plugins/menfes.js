@@ -21,8 +21,7 @@ let td = 'application/vnd.openxmlformats-officedocument.wordprocessingml.documen
     let foot = `Kamu blom bisa membalas pesan menfes ini ke pengirim, jadi ss aja buat SW siapa tau orang yg ngirim ngaku.\n\nKalo mau gunain fiturnya tinggal ketik .𝙢𝙚𝙣𝙛𝙚𝙨`
 
     const templateButtons = [
-    {index: 1, quickReplyButton: {displayText: 'Menu', id: '.menu'}},
-    {index: 2, quickReplyButton: {displayText: 'Dari Siapa?', id: '.gpls'}},
+    {index: 1, quickReplyButton: {displayText: 'MENFES', id: '.menfes'}},
 ]
 let tm = {
 text: spam1,
@@ -35,7 +34,7 @@ conn.sendMessage(korban + '@s.whatsapp.net', tm, m)
 {
 
     let logs = ` ⚠️Berhasil mengirim pesan rahasia ke ${korban}`
-    conn.reply(m.chat, logs, m)
+    conn.sendButton(m.chat, logs, botdate, [['Menu', '.menu']], m)
 }}
 handler.help = ['menfes']
 handler.tags = ['anonymous']
