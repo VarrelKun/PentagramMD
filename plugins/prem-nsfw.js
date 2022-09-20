@@ -99,7 +99,7 @@ let b = '?apikey=ApiRevita'
 //> Pentagram
 
 
-let tres = 'https://xpentabot.herokuapp.com/api/nsfw/'
+let tres = 'https://xpent4.herokuapp.com/api/nsfw/'
 
 
 
