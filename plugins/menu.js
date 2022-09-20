@@ -196,27 +196,9 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
     let mpt = clockString(_mpt)
       const sections = [
    {
-    title: `${htki} RULES ${htka}`,
+    title: `${htki} MAIN ${htka}`,
 	rows: [
-	    {title: `🚦 ${pmenus} PLEASE READ THIS RULES
-
-® ${pmenus} DILARANG SPAM BOT | *JIKA BELUM BERDONASI*
-® ${pmenus} GUNAKAN BOT SEBAIK MUNGKIN | *PASTI FAHAMLAH*
-® ${pmenus} OWNER ADALAH DEWA`, rowId: ".sc", description: `${namebot}`},
-	    //{title: ` ${pmenus} GUNAKAN BOT SEBAIK MUNGKIN`, description: "Pasti Fahamlah"},
-	    //{title: `🚥 ${pmenus} OWNER ADALAH DEWA`, description: `${namebot}`},
-	]
-    },{
-	title: `${htki} MAIN ${htka}`,
-	rows: [
-	    {title: `💌 ${pmenus} OWNER BOT`, rowId: ".owner", description: "Menampilkan List owner BOT"},
-	]
-    },{
-	title: `${htki} SUPPORT ${htka}`,
-	rows: [
-	    {title: `🛒 ${pmenus} OWNER SHOP`, rowId: ".store", description: "Custom Design By Owner"},
-	    {title: `🌟 ${pmenus} BUY PREMIUM`, rowId: ".premium", description: "Menampilkan list harga premium"},
-	    {title: `💳 ${pmenus} DONASI`, rowId: ".donasi", description: 'Support BOT agar lebih fast respon'},
+	    {title: `⚠️ Information ⚠️`, rowId: ".gopal"},
 	]
 	},{
 	title: `${htki} MENU ${htka}`,
@@ -264,7 +246,7 @@ ${clockStringP(usrs.premiumTime - new Date())}` : ''}
 `
 const listMessage = {
   text: tek,
-  footer: '⚠️ *Note:* Bot masih dalam pengembangan, jika menemukan bug/fitur error harap dimaklumi\n\n➣ xpentabot.herokuapp.com',
+  footer: '⚠️ *Note:* Mohon tidak _SPAM_ saat menggunakan BOT agar tidak di Banned',
   mentions: await conn.parseMention(tek),
   title: `${htki} *LIST MENU* ${htka}`,
   buttonText: `LIST MENU ⎙`,
