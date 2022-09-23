@@ -20,7 +20,7 @@ let handler = async (m, { conn, args }) => {
       }
     }
   })
-  let url = `https://api.lolhuman.xyz/api/tiktokwm?apikey=APIKEY&url=${args[0]}`
+  let url = `https://api.lolhuman.xyz/api/tiktokwm?apikey=SGWN&url=${args[0]}`
   let txt = `🚀 *Link:* ${await (await axios.get(`https://tinyurl.com/api-create.php?url=${args[0]}`)).data}`
   await conn.sendFile(m.chat, url, 'tiktokaudio.mp3', `
 ┏┉━━━━━━━━━━━❏
