@@ -85,7 +85,7 @@ global.loadDatabase = async function loadDatabase() {
 }
 loadDatabase()
 
-global.authFile = `${opts._[0] || 'kannabot'}.data.json`
+global.authFile = `${opts._[0] || 'pentagram'}.data.json`
 console.log(`Load AuthFile from ${authFile}`)
 const { state, saveState } = useSingleFileAuthState(global.authFile)
 
