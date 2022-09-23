@@ -33,7 +33,7 @@ const fload = {
     surface : 1,
     message: 'Nih kak Ownerku yang ganteng',
     orderTitle: `▮Menu ▸`,
-    thumbnail: await(await fetch(ppown)).buffer, 
+    thumbnail: await(await fetch(ppown)).buffer(), 
     sellerJid: '0@s.whatsapp.net' 
     }
     }
