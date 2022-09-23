@@ -310,9 +310,9 @@ export async function handler(chatUpdate) {
                 if (!('antiLink' in chat))
                     chat.antiLink = false
                 if (!('sticker' in chat))
-                    chat.sticker = false
+                    chat.sticker = true
                 if (!('viewonce' in chat))
-                    chat.viewonce = true
+                    chat.viewonce = false
                 if (!('antiToxic' in chat))
                     chat.antiToxic = false
                 if (!('simi' in chat))
@@ -334,13 +334,13 @@ export async function handler(chatUpdate) {
                     sDemote: '',
                     delete: true,
                     antiLink: false,
-                    sticker: false,
-                    viewonce: true,
-                    antiToxic: true,
+                    sticker: true,
+                    viewonce: false,
+                    antiToxic: falss,
                     simi: false,
                     expired: 0,
                     nsfw: false,
-                    premnsfw: false,
+                    premnsfw: true,
                 }
             let settings = global.db.data.settings[this.user.jid]
             if (typeof settings !== 'object') global.db.data.settings[this.user.jid] = {}
