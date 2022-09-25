@@ -29,7 +29,7 @@ You're already adventure!!, please wait *🕐${timers.toTimeString()}*
 handler.help = ['adventure', 'petualang', 'berpetualang', 'mulung']
 handler.tags = ['rpg']
 handler.command = /^(adventure|(ber)?petualang(ang)?|mulung)$/i
-
+handler.group = true
 handler.cooldown = cooldown
 handler.disabled = false
 
