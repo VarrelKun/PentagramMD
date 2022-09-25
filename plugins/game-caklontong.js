@@ -26,4 +26,6 @@ handler.help = ['caklontong']
 handler.tags = ['game']
 handler.command = /^caklontong/i
 
+handler.group = true
+
 export default handler
