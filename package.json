@@ -1,6 +1,6 @@
 {
-    "name": "Kanna BOT",
-    "version": "2.10.18",
+    "name": "XPENTA MD",
+    "version": "3.10.18",
     "description": "RPG WhatsApp BOT",
     "main": "index.js",
     "type": "module",
@@ -32,10 +32,10 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/BochilGaming/games-wabot.git"
+        "url": "git+https://github.com/VarrelKun/PentagramMD.git"
     },
     "bugs": {
-        "url": "https://github.com/BochilGaming/games-wabot/issues"
+        "url": "https://github.com/VarrelKun/PentagramMD/issues"
     },
     "license": "GPL-3.0-or-later",
     "dependencies": {
