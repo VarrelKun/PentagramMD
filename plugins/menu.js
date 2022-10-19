@@ -214,7 +214,6 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
     },{
 	title: `${htki} SUPPORT ${htka}`,
 	rows: [
-	    {title: `🛒 ${pmenus} OWNER SHOP`, rowId: ".store", description: "Custom Design By Owner"},
 	    {title: `🌟 ${pmenus} BUY PREMIUM`, rowId: ".premium", description: "Menampilkan list harga premium"},
 	    {title: `💳 ${pmenus} DONASI`, rowId: ".donasi", description: 'Support BOT agar lebih fast respon'},
 	]
@@ -228,7 +227,6 @@ let handler = async (m, { conn, usedPrefix: _p, __dirname, args }) => {
         {title: `╿📸╽Image`, rowId: ".? image", description: "⤷ Random search image"},
 	{title: `╿🎮╽Game`, rowId: ".? game", description: "⤷ Gamenya seru seru lho >-<"},
 	{title: `╿🧩╽Fun`, rowId: ".? fun", description: "⤷ Fitur yang aman untuk keluarga"},
-	{title: `╿☠╽Virus`, rowId: ".? virus", description: "⤷ Virus/Bug WhatsApp"},
 	{title: `╿🐚╽ Kerang`, rowId: ".? kerangajaib", description: "⤷ Tanyakan pada ketua club"},
 	{title: `╿📑╽Quotes`, rowId: ".? quotes", description: "⤷ Random Inspirasi"},
 	{title: `╿⛩️╽Anime`, rowId: ".? anime", description: "⤷ Kamu wibu ya bang?"},
@@ -264,7 +262,7 @@ ${clockStringP(usrs.premiumTime - new Date())}` : ''}
 `
 const listMessage = {
   text: tek,
-  footer: '⚠️ *Note:* Bot masih dalam pengembangan, jika menemukan bug/fitur error harap dimaklumi\n\n➣ xpentabot.herokuapp.com',
+  footer: '⚠️ *Note:* Bot masih dalam pengembangan, jika menemukan bug/fitur error harap dimaklumi\n\n➣ https://xpenta.my.id',
   mentions: await conn.parseMention(tek),
   title: `${htki} *LIST MENU* ${htka}`,
   buttonText: `LIST MENU ⎙`,
