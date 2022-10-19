@@ -1,6 +1,7 @@
-import './config.js'
+process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = '0';
+import './config.js';
 
-import { createRequire } from "module" // Bring in the ability to create the 'require' method
+import { createRequire } from "module"; // Bring in the ability to create the 'require' method
 import path, { join } from 'path'
 import { fileURLToPath, pathToFileURL } from 'url'
 import { platform } from 'process'
@@ -15,18 +16,19 @@ import {
   readFileSync,
   watch
 } from 'fs';
-import yargs from 'yargs'
-import { spawn } from 'child_process'
-import lodash from 'lodash'
-import syntaxerror from 'syntax-error'
-import { tmpdir } from 'os'
-import { format } from 'util'
-import { makeWASocket, protoType, serialize } from './lib/simple.js'
-import { Low, JSONFile } from 'lowdb'
-/*import {
+import yargs from 'yargs';
+import { spawn } from 'child_process';
+import lodash from 'lodash';
+import syntaxerror from 'syntax-error';
+import { tmpdir } from 'os';
+import { format } from 'util';
+import { makeWASocket, protoType, serialize } from './lib/simple.js';
+import { Low, JSONFile } from 'lowdb';
+import pino from 'pino';
+import {
   mongoDB,
   mongoDBV2
-} from './lib/mongoDB.js' */
+} from './lib/mongoDB.js';
 const {
   useSingleFileAuthState,
   DisconnectReason
@@ -48,7 +50,7 @@ global.timestamp = {
 const __dirname = global.__dirname(import.meta.url)
 
 global.opts = new Object(yargs(process.argv.slice(2)).exitProcess(false).parse())
-global.prefix = new RegExp('^[' + (opts['prefix'] || '‎‎xzXZ/i!#$%+£¢€¥^°=¶∆×÷π√✓©®:;?&.\\-').replace(/[|\\{}()[\]^$+*?.\-\^]/g, '\\$&') + ']')
+global.prefix = new RegExp('^[' + (opts['prefix'] || '‎\/!#.\\').replace(/[|\\{}()[\]^$+*?.\-\^]/g, '\\$&') + ']')
 
 global.db = new Low(
   /https?:\/\//.test(opts['db'] || '') ?
@@ -84,6 +86,7 @@ global.loadDatabase = async function loadDatabase() {
 loadDatabase()
 
 global.authFile = `${opts._[0] || 'xpenta'}.data.json`
+console.log(`Load AuthFile from ${authFile}`)
 const { state, saveState } = useSingleFileAuthState(global.authFile)
 
 const connectionOptions = {
@@ -126,7 +129,9 @@ async function connectionUpdate(update) {
     console.log(await global.reloadHandler(true).catch(console.error))
     global.timestamp.connect = new Date
   }
-  if (global.db.data == null) loadDatabase()
+  if (global.db.data == null) await loadDatabase()
+  console.log(JSON.stringify(update, null, 4))
+  if (update.receivedPendingNotifications) conn.sendMessage(`6285954184111@s.whatsapp.net`, {text: 'Successfully connected by\n\n*💌 • Name BOT:* ' + global.namebot + '\n*🎐 • Name OWNER:* ' + global.nameown + '\n*📞 • Nomor OWNER:* https://wa.me/' + global.nomorown })//made by Gama Naufal 
 }
 
 
@@ -158,8 +163,8 @@ global.reloadHandler = async function (restatConn) {
     conn.ev.off('creds.update', conn.credsUpdate)
   }
 
-  conn.welcome = '❖━━━━━━[ *いらっしゃいませ* ]━━━━━━❖\n\n┏––––––━━━━━━━━•\n│☘︎ @subject\n┣━━━━━━━━┅┅┅\n│( 👋 Hallo @user)\n├[ *ɪɴᴛʀᴏ* ]—\n│ *ɴᴀᴍᴀ:* \n│ *ᴜᴍᴜʀ:* \n│ *ɢᴇɴᴅᴇʀ:*\n┗––––––━━┅┅┅\n\n––––––┅┅ *ᴅᴇsᴄʀɪᴘᴛɪᴏɴ* ┅┅––––––\n@desc'
-  conn.bye = '❖━━━━━━[ *さようなら* ]━━━━━━❖\n𝚂𝚊𝚢𝚘𝚗𝚊𝚛𝚊𝚊 *@user* 👋😃'
+  conn.welcome = '✦━━━━━━[ *WELCOME* ]━━━━━━✦\n\n┏––––––━━━━━━━━•\n│⫹⫺ @subject\n┣━━━━━━━━┅┅┅\n│( 👋 Hallo @user)\n├[ *INTRO* ]—\n│ *Nama:* \n│ *Umur:* \n│ *Gender:*\n┗––––––━━┅┅┅\n\n––––––┅┅ *DESCRIPTION* ┅┅––––––\n@desc'
+  conn.bye = '✦━━━━━━[ *GOOD BYE* ]━━━━━━✦\nSayonara *@user* 👋( ╹▽╹ )'
   conn.spromote = '@user sekarang admin!'
   conn.sdemote = '@user sekarang bukan admin!'
   conn.sDesc = 'Deskripsi telah diubah ke \n@desc'
