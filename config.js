@@ -76,7 +76,7 @@ global.owner = [
 global.mods = [] // Want some help?
 global.prems = [] // Premium user bukan disini nambahinnya, ketik .addprem @user 10
 
-
+global.xkey = 'APIKEYMU'
 /*============== API ==============*/
 global.APIs = { // API Prefix
   // name: 'https://website'
@@ -96,6 +96,7 @@ global.APIs = { // API Prefix
   adiisus: 'https://adiixyzapi.herokuapp.com',
   LeysCoder: 'https://leyscoders-api.herokuapp.com',
   kanx: 'https://kannxapi.herokuapp.com/'
+  males : 'https://malesin.xyz'
 }
 global.APIKeys = { // APIKey Here
   // 'https://website': 'apikey'
